@@ -39,13 +39,17 @@ box-sizing:border-box;
 .fontFamily{
 font-family: 'Roboto', sans-serif;
 }
-.fontt{
+.fontlight{
   font-family: 'Roboto', sans-serif;
   font-weight: lighter;
 }
-.fontbold{
+.fontnormal{
   font-family: 'Roboto', sans-serif;
   font-weight:normal;
+}
+.fontbold{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
 }
 .a{
   display: grid;

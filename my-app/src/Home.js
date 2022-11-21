@@ -2,12 +2,12 @@ import React from "react";
 import {  Container, Nav, Navbar, Button} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from './images/logo.png';
-// import backg from './images/backg.png';
-// import backg2 from './images/backg2.png';
+import backg2 from './images/backg-2.png';
 import backg3 from './images/backg3.png';
 import iconogrenci from './images/iconogrenci.png'
 import iconproje from './images/iconproje.png'
 import iconyayin from './images/iconyayin.png'
+import iconeye from './images/iconeye.png'
 import './App.css';
 import Card from 'react-bootstrap/Card'
 import CardGroup from 'react-bootstrap/CardGroup'
@@ -45,47 +45,41 @@ return (
                 
              </div> 
              <div>
-             <CardGroup className="a">
-                  <Card  style={{ backgroundColor:"#2c8e32", borderRadius:"0", borderRightColor:"white", borderRightHeight:"5"}} >
+             <CardGroup className="a" style={{justifyContent:"center", display:"flex",marginRight:"150px", marginLeft:"150px"}}>
+                  <Card  style={{ backgroundColor:"#2c8e32", borderRadius:"0", width:"250px", height:"225px",borderRightWidth:"1"}} >
                     <Card.Img variant="top" src={iconogrenci} style={{ width: 50, height: 50 , alignSelf:"center" , marginTop:12}}/>
                     <Card.Body style= {{color:"white", textAlign:"center"}}>
-                      <Card.Text  style={{fontWeight:"lighter"}}>Yüksek Lisans ve Lisans Öğrencileri</Card.Text>
-                      <Card.Text className="fontbold">
-                      20+
-                      </Card.Text>
+                      <Card.Text  style={{fontWeight:"lighter",fontSize:"22px"}}>Yüksek Lisans ve Lisans</Card.Text>
+                      <Card.Text  style={{fontWeight:"lighter", alignSelf:"center",fontSize:"22px"}}>Öğrencileri</Card.Text>
+                      <Card.Text className="fontnormal" style={{fontSize:"35px"}}>20+</Card.Text>
                     </Card.Body>
                   </Card>
-                  <Card  style={{backgroundColor:"#04a151" , borderRadius:"0", borderRightColor:"white"}}>
+                  <Card  style={{backgroundColor:"#04a151" , borderRadius:"0", width:"250px", height:"225px"}}>
                     <Card.Img variant="top" src={iconyayin} style={{ width: 50, height:50 , alignSelf:"center" , marginTop:15}} />
                     <Card.Body style= {{color:"white", textAlign:"center"}}>
-                      <Card.Text  style={{fontWeight:"lighter"}}>Yayınlar</Card.Text>
-                      <Card.Text className="fontbold">
-                        70+
-                      </Card.Text>
+                      <Card.Text  style={{fontWeight:"lighter",fontSize:"22px"}}>Yayınlar</Card.Text>
+                      <Card.Text className="fontnormal" style={{fontSize:"35px"}}>70+</Card.Text>
                     </Card.Body>
                   </Card>
-                  <Card style={{ backgroundColor:"#2c8e32" , borderRadius:"0" }}>
+                  <Card style={{ backgroundColor:"#2c8e32" , borderRadius:"0", width:"250px", height:"225px" }}>
                     <Card.Img variant="top" src={iconproje} style={{ width: 35, height:50 , alignSelf:"center", marginTop:12}} />
                     <Card.Body style= {{color:"white", textAlign:"center"}}>
-                      <Card.Text  style={{fontWeight:"lighter"}}>Tamamlanmış Proje</Card.Text>
-                      <Card.Text className="fontbold">
-                        10+
-                      </Card.Text>
+                      <Card.Text  style={{fontWeight:"lighter",fontSize:"22px"}}>Tamamlanmış Proje</Card.Text>
+                      <Card.Text className="fontnormal" style={{fontSize:"35px"}}>10+</Card.Text>
                     </Card.Body>
                   </Card>
                 </CardGroup>
              </div>
              <div>
-                  <Carousel variant="dark">
+                  <Carousel variant="dark" className="a" style={{justifyContent:"center", display:"flex",margin:"50"}}>
                     <Carousel.Item>
-                        <img
-                          className="d-block w-100"
-                          src="holder.js/800x400?text=First slide&bg=f5f5f5"
-                          alt="First slide"
-                        />
+                        <img src={iconeye} alt="First slide" style={{width:"5%", display:"flex", margin:"auto"}}/>
                         <Carousel.Caption>
-                          <h5>First slide label</h5>
-                          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                          <h1>Bilgisayarlı Görü</h1>
+                          <p>Farklı alanlardaki çeşitli ihtiyaçlar için derin öğrenme modellerine dayalı nesne tanımlama sistemleri geliştiriyoruz.
+                            Bilgisayarlı görü ekibimiz, görüntü, video ve akış girdileri üzerindeki nesneleri algılamak ve tespit etmek için
+                            çeşitli modüler çözümler geliştirmektir.
+                          </p>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -113,6 +107,16 @@ return (
                         </Carousel.Caption>
                     </Carousel.Item>
               </Carousel>
+             </div>
+              <div className="imageWrapper fontAll">
+                <img src={backg2} className="background-image image" style={{width:"100%", height:"20%"}} alt="background2" />   
+             </div> 
+             <div>
+              <h1>contact</h1>
+             </div>
+             <div style={{backgroundColor:"#2c8e32"}}>
+              <h3 style={{color:"white",justifyContent:"center", display:"flex",fontWeight:"lighter",fontSize:"20px"}}>2022 KOU Embedded System Laboratory - All Rights Reserved.</h3>
+              <h3 style={{color:"white",justifyContent:"center", display:"flex",fontWeight:"lighter",fontSize:"20px"}}>Developed by ...</h3>
              </div>
         </div>
   );
