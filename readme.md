@@ -76,3 +76,8 @@ import Carousel from 'react-bootstrap/Carousel'
   <!-- border-bottom: 1px solid red;
     padding: 0 0 4px; -->
   textDecorationLine:"underline", textDecorationColor:"white",textDecorationThickness:4,textUnderlineOffset:20
+  width hicbir sekilde degistirilemiyor...
+
+  developed by kısmı
+  <!-- <div style={{backgroundColor:"#2c8e32", width:"auto",paddingTop:"20px",paddingBottom:"10px"}}> -->
+  contact kısmı 3 parcaya bolmek icin card kullandım ve sınırları sildim 

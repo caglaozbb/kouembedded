@@ -112,13 +112,34 @@ return (
              {/* TODO: Contact kısmı doldurulacak */}
               <div className="imageWrapper fontAll">
                 <img src={backg2} className="background-image image" style={{width:"100%", height:"20%"}} alt="background2"/>   
-                <h3 className="imageprojeTexth1 font400 borderBottom" style={{fontSize:"75"}}>PROJELERİMİZ</h3>
+                <h3 className="imageprojeTexth1 font500" style={{fontSize:"70px"}}>PROJELERİMİZ</h3>
              </div> 
+             {/* TODO:paragrafları ayarla,renkleri ayarla başlık ve paragrafları ayır cardları yaptın borderları 0ladın cardın sınırlarını sildin */}
              <div>
-              <h1>contact</h1>
-             </div>
+             <CardGroup className="a" style={{justifyContent:"center", display:"flex",marginRight:"150px", marginLeft:"150px"}}>
+                  <Card  style={{borderRadius:"0px", width:"250px", height:"225px",borderWidth:"0px",wordWrap:"break-word"}} >
+                    <Card.Body style= {{color:"black", textAlign:"center"}}>
+                      <Card.Text  style={{fontWeight:"lighter",fontSize:"22px"}}>Adres</Card.Text>
+                      <Card.Text  style={{fontWeight:"lighter", alignSelf:"center",fontSize:"22px"}}>Kocaeli Üniversitesi\n mühendislik\nBfakültesi\nİzmit/Kocaeli</Card.Text>
+                    </Card.Body>
+                  </Card>
+                  <Card  style={{borderRadius:"0px", width:"250px", height:"225px", borderWidth:"0px"}}>
+                    <Card.Body style= {{color:"white", textAlign:"center"}}>
+                      <Card.Text  style={{fontWeight:"lighter",fontSize:"22px"}}>Çalışma Saatleri</Card.Text>
+                      <Card.Text  style={{fontWeight:"lighter", alignSelf:"center",fontSize:"22px"}}>08:00 - 17:30 \n Pazartesi - Cuma</Card.Text>
+                    </Card.Body>
+                  </Card>
+                  <Card style={{borderRadius:"0px", width:"250px", height:"225px",borderWidth:"0px" }}>
+                    <Card.Body style= {{color:"white", textAlign:"center"}}>
+                      <Card.Text  style={{fontWeight:"lighter",fontSize:"22px"}}>E-Mail</Card.Text>
+                      <Card.Text  style={{fontWeight:"lighter", alignSelf:"center",fontSize:"22px"}}>Embedded@kocaeli.edu.tr</Card.Text>
+                    </Card.Body>
+                  </Card>
+                </CardGroup>
+                             </div>
              {/* FIXME: Divin uzunlugu arttıralacak, ve paragraflar arası bosluk azaltılacak. */}
-             <div style={{backgroundColor:"#2c8e32"}}>
+             {/* fixme Cozuldu */}
+             <div style={{backgroundColor:"#2c8e32", width:"auto",paddingTop:"20px",paddingBottom:"10px"}}>
               <h3 style={{color:"white",justifyContent:"center", display:"flex",fontWeight:"lighter",fontSize:"20px"}}>2022 KOU Embedded System Laboratory - All Rights Reserved.</h3>
               <h3 style={{color:"white",justifyContent:"center", display:"flex",fontWeight:"lighter",fontSize:"20px"}}>Developed by ...</h3>
              </div>
