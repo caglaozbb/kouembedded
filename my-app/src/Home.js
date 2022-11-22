@@ -42,8 +42,8 @@ return (
                 <h2 className="imageTexth1" style={{fontWeight:"lighter"}}>KOCAELİ ÜNİVERSİTESİ</h2>
                 <h3 className="imageTexth2"style={{fontWeight:"bolder"}}>GÖMÜLÜ SİSTEMLER LABORATUVARI</h3>
                 <p className="imageTextp"> Gömülü ve Sensör Sistemleri Laboratuvarı, Kocaeli Üniversitesi Mühendislik Fakültesi çatısı altında faaliyet gösteren bir araştırma ve geliştirme laboratuvarıdır. Lisans, yüksek lisans ve doktora öğrencilerimizin mühendislik alanlarında deneyim kazanmaları ve uzmanlaşmaları hedeflenmektedir.</p>
-                
              </div> 
+             {/* TODO: cardların arasını 0la ve aralarını beyaz cizgilerle belirle */}
              <div>
              <CardGroup className="a" style={{justifyContent:"center", display:"flex",marginRight:"150px", marginLeft:"150px"}}>
                   <Card  style={{ backgroundColor:"#2c8e32", borderRadius:"0", width:"250px", height:"225px",borderRightWidth:"1"}} >
@@ -70,6 +70,7 @@ return (
                   </Card>
                 </CardGroup>
              </div>
+             {/* TODO:Carousele 3 kart eklenecek icon ve yazıların yerleri düzeltilecek: */}
              <div>
                   <Carousel variant="dark" className="a" style={{justifyContent:"center", display:"flex",margin:"50"}}>
                     <Carousel.Item>
@@ -108,12 +109,15 @@ return (
                     </Carousel.Item>
               </Carousel>
              </div>
+             {/* TODO: Contact kısmı doldurulacak */}
               <div className="imageWrapper fontAll">
-                <img src={backg2} className="background-image image" style={{width:"100%", height:"20%"}} alt="background2" />   
+                <img src={backg2} className="background-image image" style={{width:"100%", height:"20%"}} alt="background2"/>   
+                <h3 className="imageprojeTexth1 font400 borderBottom" style={{fontSize:"75"}}>PROJELERİMİZ</h3>
              </div> 
              <div>
               <h1>contact</h1>
              </div>
+             {/* FIXME: Divin uzunlugu arttıralacak, ve paragraflar arası bosluk azaltılacak. */}
              <div style={{backgroundColor:"#2c8e32"}}>
               <h3 style={{color:"white",justifyContent:"center", display:"flex",fontWeight:"lighter",fontSize:"20px"}}>2022 KOU Embedded System Laboratory - All Rights Reserved.</h3>
               <h3 style={{color:"white",justifyContent:"center", display:"flex",fontWeight:"lighter",fontSize:"20px"}}>Developed by ...</h3>

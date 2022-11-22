@@ -36,6 +36,13 @@ box-sizing:border-box;
   left: 48%;
   text-align:start;
 }
+.imageprojeTexth1{
+  position: absolute;
+  bottom:80%;
+  left: 32%;
+  text-align:start;
+  color: whitesmoke;
+}
 .fontFamily{
 font-family: 'Roboto', sans-serif;
 }
@@ -51,8 +58,19 @@ font-family: 'Roboto', sans-serif;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
 }
+.font400{
+  font-family: 'Roboto', sans-serif;
+  font-weight:400;
+}
 .a{
   display: grid;
   grid-template-columns: 10rem 10rem 10rem;
   grid-gap: 1rem;
+}
+FIXME:borderbottom width ayarla
+.borderBottom{
+  border-bottom: "4px solid";
+  border-bottom-color: whitesmoke;
+  border-bottom-width:10% ;
+  padding:"0 0 10px";
 }

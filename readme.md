@@ -49,3 +49,30 @@ background-image align-top justify-content-start d-flex object-fit-cover
       </Card> -->
 
 import Carousel from 'react-bootstrap/Carousel'
+
+ <!-- <Carousel variant="dark" className="a" style={{justifyContent:"center", display:"flex",margin:"50"}}>
+                    <Carousel.Item>
+                        <img src={iconeye} alt="First slide" style={{width:"5%", display:"flex", margin:"auto"}}/>
+                        <Carousel.Caption>
+                          <h1>Bilgisayarlı Görü</h1>
+                          <p>Farklı alanlardaki çeşitli ihtiyaçlar için derin öğrenme modellerine dayalı nesne tanımlama sistemleri geliştiriyoruz.
+                            Bilgisayarlı görü ekibimiz, görüntü, video ve akış girdileri üzerindeki nesneleri algılamak ve tespit etmek için
+                            çeşitli modüler çözümler geliştirmektir.
+                          </p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+  </Carousel> -->
+
+  Carousel iconları ortalamak için justifyContent:center ve display:flex kullanıldı.
+  Card özellikleri degistirildi
+  <!-- cardların ortalanması -->
+  style={{justifyContent:"center", display:"flex",marginRight:"150px", marginLeft:"150px"}}
+  <!-- textlerin özellikleri -->
+  style={{fontWeight:"lighter",fontSize:"22px"}} 
+  <!-- css fontların özellikleri degistirildi -->
+  isimleri fontlight,fontnormal,fontbold yapıldı.
+
+  underline width degistiremezsin bu yuzden borderbottom kullanman gerekir
+  <!-- border-bottom: 1px solid red;
+    padding: 0 0 4px; -->
+  textDecorationLine:"underline", textDecorationColor:"white",textDecorationThickness:4,textUnderlineOffset:20
