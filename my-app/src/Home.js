@@ -1,14 +1,14 @@
-import React from "react";
-import {  Container, Nav, Navbar, Button} from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import logo from './images/logo.png';
-import backg2 from './images/backg-2.png';
-import backg3 from './images/backg3.png';
+import React from "react"
+import {  Container, Nav, Navbar, Button} from 'react-bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import logo from './images/logo.png'
+import backg2 from './images/backg-2.png'
+import backg3 from './images/backg3.png'
 import iconogrenci from './images/iconogrenci.png'
 import iconproje from './images/iconproje.png'
 import iconyayin from './images/iconyayin.png'
 import iconeye from './images/iconeye.png'
-import './App.css';
+import './App.css'
 import Card from 'react-bootstrap/Card'
 import CardGroup from 'react-bootstrap/CardGroup'
 import Carousel from 'react-bootstrap/Carousel'
@@ -41,7 +41,7 @@ return (
                 <img src={backg3} className="background-image image" style={{width:"100%", height:"20%"}} alt="background" />
                 <h2 className="imageTexth1" style={{fontWeight:"lighter"}}>KOCAELİ ÜNİVERSİTESİ</h2>
                 <h3 className="imageTexth2"style={{fontWeight:"bolder"}}>GÖMÜLÜ SİSTEMLER LABORATUVARI</h3>
-                <p className="imageTextp"> Gömülü ve Sensör Sistemleri Laboratuvarı, Kocaeli Üniversitesi Mühendislik Fakültesi çatısı altında faaliyet gösteren bir araştırma ve geliştirme laboratuvarıdır. Lisans, yüksek lisans ve doktora öğrencilerimizin mühendislik alanlarında deneyim kazanmaları ve uzmanlaşmaları hedeflenmektedir.</p>
+                <p className="imageTextp"> Gömülü ve Sensör Sistemleri Laboratuvarı, Kocaeli Üniversitesi Mühendislik Fakültesi<br></br> çatısı altında faaliyet gösteren bir araştırma ve geliştirme laboratuvarıdır.<br></br> Lisans, yüksek lisans ve doktora öğrencilerimizin mühendislik alanlarında deneyim <br></br>  kazanmaları ve uzmanlaşmaları hedeflenmektedir.</p>
              </div> 
              {/* TODO: cardların arasını 0la ve aralarını beyaz cizgilerle belirle */}
              <div>
@@ -49,7 +49,7 @@ return (
                   <Card  style={{ backgroundColor:"#2c8e32", borderRadius:"0", width:"250px", height:"225px",borderRightWidth:"1"}} >
                     <Card.Img variant="top" src={iconogrenci} style={{ width: 50, height: 50 , alignSelf:"center" , marginTop:12}}/>
                     <Card.Body style= {{color:"white", textAlign:"center"}}>
-                      <Card.Text  style={{fontWeight:"lighter",fontSize:"22px"}}>Yüksek Lisans ve Lisans</Card.Text>
+                      <Card.Text  style={{fontWeight:"lighter",fontSize:"22px",padding:"0px", margin:"0px"}}>Yüksek Lisans ve Lisans</Card.Text>
                       <Card.Text  style={{fontWeight:"lighter", alignSelf:"center",fontSize:"22px"}}>Öğrencileri</Card.Text>
                       <Card.Text className="fontnormal" style={{fontSize:"35px"}}>20+</Card.Text>
                     </Card.Body>
@@ -74,74 +74,50 @@ return (
              <div>
                   <Carousel variant="dark" className="a" style={{justifyContent:"center", display:"flex",margin:"50"}}>
                     <Carousel.Item>
-                        <img src={iconeye} alt="First slide" style={{width:"5%", display:"flex", margin:"auto"}}/>
-                        <Carousel.Caption>
-                          <h1>Bilgisayarlı Görü</h1>
-                          <p>Farklı alanlardaki çeşitli ihtiyaçlar için derin öğrenme modellerine dayalı nesne tanımlama sistemleri geliştiriyoruz.
-                            Bilgisayarlı görü ekibimiz, görüntü, video ve akış girdileri üzerindeki nesneleri algılamak ve tespit etmek için
-                            çeşitli modüler çözümler geliştirmektir.
+                        <img src={iconeye} alt="First slide" style={{width:"8%", display:"flex",margin:"100px",marginLeft:"400px",marginTop:"50px",marginBottom:"100px"}}/>
+                        <div style={{marginTop:"145px"}}>
+                        <Carousel.Caption >
+                          <h1 style={{fontSize:"60px",margin:"100px",marginLeft:"300px",marginBottom:"0px",marginTop:"1000px"}} >Bilgisayarlı Görü</h1>
+                          <div>
+                          <p style={{textAlign:"left",marginLeft:"300px",fontSize:"20px"}}>Farklı alanlardaki çeşitli ihtiyaçlar için derin öğrenme <br></br> modellerine dayalı nesne tanımlama sistemleri geliştiriyoruz.<br></br>
+                            Bilgisayarlı görü ekibimiz, görüntü, video ve akış girdileri<br></br> üzerindeki nesneleri algılamak ve tespit etmek için <br></br>çeşitli modüler çözümler geliştirmektir.
                           </p>
+                          </div>
                         </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                          className="d-block w-100"
-                          src="holder.js/800x400?text=Second slide&bg=eee"
-                          alt="Second slide"
-                        />
-                        <Carousel.Caption>
-                          <h5>Second slide label</h5>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                          className="d-block w-100"
-                          src="holder.js/800x400?text=Third slide&bg=e5e5e5"
-                          alt="Third slide"
-                        />
-                        <Carousel.Caption>
-                          <h5>Third slide label</h5>
-                          <p>
-                            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                          </p>
-                        </Carousel.Caption>
+                        </div>
                     </Carousel.Item>
               </Carousel>
              </div>
-             {/* TODO: Contact kısmı doldurulacak */}
               <div className="imageWrapper fontAll">
                 <img src={backg2} className="background-image image" style={{width:"100%", height:"20%"}} alt="background2"/>   
                 <h3 className="imageprojeTexth1 font500" style={{fontSize:"70px"}}>PROJELERİMİZ</h3>
              </div> 
-             {/* TODO:paragrafları ayarla,renkleri ayarla başlık ve paragrafları ayır cardları yaptın borderları 0ladın cardın sınırlarını sildin */}
              <div>
              <CardGroup className="a" style={{justifyContent:"center", display:"flex",marginRight:"150px", marginLeft:"150px"}}>
-                  <Card  style={{borderRadius:"0px", width:"250px", height:"225px",borderWidth:"0px",wordWrap:"break-word"}} >
-                    <Card.Body style= {{color:"black", textAlign:"center"}}>
-                      <Card.Text  style={{fontWeight:"lighter",fontSize:"22px"}}>Adres</Card.Text>
-                      <Card.Text  style={{fontWeight:"lighter", alignSelf:"center",fontSize:"22px"}}>Kocaeli Üniversitesi\n mühendislik\nBfakültesi\nİzmit/Kocaeli</Card.Text>
+                  <Card  style={{borderRadius:"0px", height:"150px",borderWidth:"0px",wordWrap:"break-word",marginBottom:"25px",marginTop:"10px"}} >
+                    <Card.Body className="fontlight" style= {{color:"#2c8e32", textAlign:"center",fontSize:"15px"}}>
+                      <Card.Text  className="font500" style={{fontSize:"18px"}}>Adres</Card.Text>
+                      <Card.Text  className="font300" style={{textAlign:"start",padding:"0px",margin:"0",marginLeft:"100px"}}>Kocaeli Üniversitesi<br></br>Mühendislik<br></br>B Fakültesi<br></br>İzmit / Kocaeli</Card.Text>
                     </Card.Body>
                   </Card>
-                  <Card  style={{borderRadius:"0px", width:"250px", height:"225px", borderWidth:"0px"}}>
-                    <Card.Body style= {{color:"white", textAlign:"center"}}>
-                      <Card.Text  style={{fontWeight:"lighter",fontSize:"22px"}}>Çalışma Saatleri</Card.Text>
-                      <Card.Text  style={{fontWeight:"lighter", alignSelf:"center",fontSize:"22px"}}>08:00 - 17:30 \n Pazartesi - Cuma</Card.Text>
+                  <Card  style={{borderRadius:"0px", height:"150px",borderWidth:"0px",wordWrap:"break-word",marginBottom:"25px",marginTop:"10px"}}>
+                    <Card.Body className="fontlight" style= {{color:"#2c8e32", textAlign:"center",fontSize:"15px"}}>
+                      <Card.Text  className="font500"  style={{fontSize:"18px"}}>Çalışma Saatleri</Card.Text>
+                      <Card.Text  className="font300" style={{textAlign:"start",padding:"0px",margin:"0",marginLeft:"100px"}}>08:00 - 17:30</Card.Text>
+                      <Card.Text  className="font300" style={{textAlign:"start",padding:"0px",margin:"0",marginLeft:"100px"}}>Pazartesi - Cuma</Card.Text>
                     </Card.Body>
                   </Card>
-                  <Card style={{borderRadius:"0px", width:"250px", height:"225px",borderWidth:"0px" }}>
-                    <Card.Body style= {{color:"white", textAlign:"center"}}>
-                      <Card.Text  style={{fontWeight:"lighter",fontSize:"22px"}}>E-Mail</Card.Text>
-                      <Card.Text  style={{fontWeight:"lighter", alignSelf:"center",fontSize:"22px"}}>Embedded@kocaeli.edu.tr</Card.Text>
+                  <Card style={{borderRadius:"0px", height:"150px",borderWidth:"0px",wordWrap:"break-word",marginBottom:"25px",marginTop:"10px"}}>
+                    <Card.Body className="fontlight" style= {{color:"#2c8e32", textAlign:"center",fontSize:"15px"}}>
+                      <Card.Text  className="font500"  style={{fontSize:"18px",}}>E-Mail</Card.Text>
+                      <Card.Text  className="font300" style={{padding:"0px", margin:"0px"}}>embedded@kocaeli.edu.tr</Card.Text>
                     </Card.Body>
                   </Card>
                 </CardGroup>
-                             </div>
-             {/* FIXME: Divin uzunlugu arttıralacak, ve paragraflar arası bosluk azaltılacak. */}
-             {/* fixme Cozuldu */}
-             <div style={{backgroundColor:"#2c8e32", width:"auto",paddingTop:"20px",paddingBottom:"10px"}}>
-              <h3 style={{color:"white",justifyContent:"center", display:"flex",fontWeight:"lighter",fontSize:"20px"}}>2022 KOU Embedded System Laboratory - All Rights Reserved.</h3>
-              <h3 style={{color:"white",justifyContent:"center", display:"flex",fontWeight:"lighter",fontSize:"20px"}}>Developed by ...</h3>
+             </div>
+             <div style={{backgroundColor:"#2c8e32", width:"auto",paddingTop:"25px",paddingBottom:"20px"}}>
+              <h3 style={{color:"white",justifyContent:"center", display:"flex",fontWeight:"lighter",fontSize:"22px"}}>2022 KOU Embedded System Laboratory - All Rights Reserved.</h3>
+              <h3 style={{color:"white",justifyContent:"center", display:"flex",fontWeight:"lighter",fontSize:"22px"}}>Developed by ...</h3>
              </div>
         </div>
   );

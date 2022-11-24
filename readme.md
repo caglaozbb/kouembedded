@@ -81,3 +81,34 @@ import Carousel from 'react-bootstrap/Carousel'
   developed by kısmı
   <!-- <div style={{backgroundColor:"#2c8e32", width:"auto",paddingTop:"20px",paddingBottom:"10px"}}> -->
   contact kısmı 3 parcaya bolmek icin card kullandım ve sınırları sildim 
+
+paragrafları ve ya headerları birbirine yaklastırmak icin padding ve marginleri 0 verebilirsin 
+
+                        <Carousel.Item>
+                          <img
+                            className="d-block w-100"
+                            src="holder.js/800x400?text=Second slide&bg=eee"
+                            alt="Second slide"
+                          />
+                          <Carousel.Caption>
+                            <h5>Second slide label</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                          </Carousel.Caption>
+                      </Carousel.Item>
+                      <Carousel.Item>
+                          <img
+                            className="d-block w-100"
+                            src="holder.js/800x400?text=Third slide&bg=e5e5e5"
+                            alt="Third slide"
+                          />
+                          <Carousel.Caption>
+                            <h5>Third slide label</h5>
+                            <p>
+                              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                            </p>
+                          </Carousel.Caption>
+                      </Carousel.Item>
+
+fontfamily kaldırdım *{} altına koydum tüm yazılara roboto vermis oldum
+
+<!-- <br> </br> alt satıra geçirir -->

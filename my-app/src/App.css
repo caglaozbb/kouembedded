@@ -4,6 +4,7 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
+font-family: 'Roboto', sans-serif;
 }
 
 .imageWrapper {
@@ -45,9 +46,9 @@ box-sizing:border-box;
   border-bottom: 3px solid whitesmoke;
   border-bottom-style: inset 
 }
-.fontFamily{
+/* .fontFamily{
 font-family: 'Roboto', sans-serif;
-}
+} */
 .fontlight{
   font-family: 'Roboto', sans-serif;
   font-weight: lighter;
@@ -63,6 +64,10 @@ font-family: 'Roboto', sans-serif;
 .font500{
   font-family: 'Roboto', sans-serif;
   font-weight:500;
+}
+.font300{
+  font-family: 'Roboto', sans-serif;
+  font-weight:300;
 }
 .a{
   display: grid;
