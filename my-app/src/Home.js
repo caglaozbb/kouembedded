@@ -39,7 +39,7 @@ return (
               </div>
               <div className="imageWrapper fontAll">
                 <img src={backg3} className="background-image image" style={{width:"100%", height:"20%"}} alt="background" />
-                <h2 className="imageTexth1" style={{fontWeight:"lighter"}}>KOCAELİ ÜNİVERSİTESİ</h2>
+                <h2 className="imageTexth1 font300">KOCAELİ ÜNİVERSİTESİ</h2>
                 <h3 className="imageTexth2"style={{fontWeight:"bolder"}}>GÖMÜLÜ SİSTEMLER LABORATUVARI</h3>
                 <p className="imageTextp"> Gömülü ve Sensör Sistemleri Laboratuvarı, Kocaeli Üniversitesi Mühendislik Fakültesi<br></br> çatısı altında faaliyet gösteren bir araştırma ve geliştirme laboratuvarıdır.<br></br> Lisans, yüksek lisans ve doktora öğrencilerimizin mühendislik alanlarında deneyim <br></br>  kazanmaları ve uzmanlaşmaları hedeflenmektedir.</p>
              </div> 
@@ -71,18 +71,17 @@ return (
                 </CardGroup>
              </div>
              {/* TODO:Carousele 3 kart eklenecek icon ve yazıların yerleri düzeltilecek: */}
-             <div>
-                  <Carousel variant="dark" className="a" style={{justifyContent:"center", display:"flex",margin:"50"}}>
+             {/* FIXME:yazılar ve icon duzenlendi kalan 2 kart eklenecek */}
+             <div style={{height:"475px"}}>
+                  <Carousel variant="dark" className="a" style={{justifyContent:"center", display:"flex",height:"auto"}}>
                     <Carousel.Item>
-                        <img src={iconeye} alt="First slide" style={{width:"8%", display:"flex",margin:"100px",marginLeft:"400px",marginTop:"50px",marginBottom:"100px"}}/>
-                        <div style={{marginTop:"145px"}}>
-                        <Carousel.Caption >
-                          <h1 style={{fontSize:"60px",margin:"100px",marginLeft:"300px",marginBottom:"0px",marginTop:"1000px"}} >Bilgisayarlı Görü</h1>
-                          <div>
-                          <p style={{textAlign:"left",marginLeft:"300px",fontSize:"20px"}}>Farklı alanlardaki çeşitli ihtiyaçlar için derin öğrenme <br></br> modellerine dayalı nesne tanımlama sistemleri geliştiriyoruz.<br></br>
-                            Bilgisayarlı görü ekibimiz, görüntü, video ve akış girdileri<br></br> üzerindeki nesneleri algılamak ve tespit etmek için <br></br>çeşitli modüler çözümler geliştirmektir.
+                        <img src={iconeye} alt="First slide" style={{width:"8%", display:"flex",margin:"100px",marginLeft:"380px",marginTop:"50px",marginBottom:"100px"}}/>
+                        <div style={{marginTop:"200px"}}>
+                        <Carousel.Caption>
+                          <h1 style={{fontSize:"60px",margin:"100px",marginLeft:"280px",marginBottom:"0px"}} >Bilgisayarlı Görü</h1>
+                          <p style={{textAlign:"left",marginLeft:"170px",fontSize:"20px",marginBottom:"0px",marginTop:"70px"}}>Farklı alanlardaki çeşitli ihtiyaçlar için derin öğrenme modellerine dayalı <br></br> nesne tanımlama sistemleri geliştiriyoruz.
+                            Bilgisayarlı görü ekibimiz,<br></br> görüntü, video ve akış girdileri üzerindeki nesneleri algılamak ve tespit<br></br> etmek için çeşitli modüler çözümler geliştirmektir.
                           </p>
-                          </div>
                         </Carousel.Caption>
                         </div>
                     </Carousel.Item>
