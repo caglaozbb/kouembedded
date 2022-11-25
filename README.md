@@ -36,6 +36,8 @@ You can also reach out to the laboratory with contact me section.
 + CSS
 
 ## Designs
+![embedded_son_Çalışma Yüzeyi -git](https://user-images.githubusercontent.com/58826644/204058284-fa49340d-cc10-41c1-82fc-4dfd505ea1ce.png)
+![Uploading embedded_son_Çalışma Yüzeyi -git2.png…]()
 
 ## 📬 Contact Me
 
