@@ -1,7 +1,7 @@
 # kouembedded
-Static website for Kocaeli University Embedded Systems Laboratory
+For Kocaeli University Embedded Systems Laboratory
 
-💻 KOCAELI UNIVERSITY Static Website 
+💻 KOCAELI UNIVERSITY - a static website 
 ---
 
 
