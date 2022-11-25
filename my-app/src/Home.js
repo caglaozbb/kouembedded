@@ -17,6 +17,8 @@ import Carousel from 'react-bootstrap/Carousel'
 export const Home = () => {
 
 return (   
+
+  // NAVBAR
         <div>
               <div className="Navbar fontAll">
                 <Navbar sticky="top" expand="lg" style={{backgroundColor: "#e9eef4"}}>
@@ -27,8 +29,8 @@ return (
                         <Nav className="me-auto justify-content-end fontAll" style={{fontSize: 14}} >
                           <Nav.Link href="#" style={{marginRight: 20}}>Ana Sayfa</Nav.Link>
                           <Nav.Link href="#" style={{marginRight: 20}}>Dersler</Nav.Link>
-                          <Nav.Link href="#" style={{marginRight: 20,textDecorationLine:"underline", textDecorationColor:"#2c8e32",textDecorationThickness:1,textUnderlineOffset:10}}>Araştırmalar</Nav.Link>
-                          <Nav.Link href="#" style={{marginRight: 20,textDecorationLine:"underline", textDecorationColor:"#2c8e32",textDecorationThickness:1,textUnderlineOffset:10}}>Ekibimiz</Nav.Link>
+                          <Nav.Link href="#" className="navbarunderline">Araştırmalar</Nav.Link>
+                          <Nav.Link href="#" className="navbarunderline">Ekibimiz</Nav.Link>
                           <Nav.Link href="#" style={{marginRight: 20}}>İşbirlikçilerimiz</Nav.Link>
                           <Nav.Link href="#" style={{marginRight: 20}}>Broşür</Nav.Link>
                           <Button variant="primary" style={{borderRadius:30, backgroundColor:"#2c8e32",borderWidth:0}}>Bize Ulaşın</Button>
@@ -37,11 +39,13 @@ return (
                     </Navbar.Collapse>
                 </Navbar>
               </div>
+
+  {/* LANDINGPAGE */}
               <div className="imageWrapper fontAll">
-                <img src={backg3} className="background-image image" style={{width:"100%", height:"20%"}} alt="background" />
-                <h2 className="imageTexth1 font300">KOCAELİ ÜNİVERSİTESİ</h2>
-                <h3 className="imageTexth2"style={{fontWeight:"bolder"}}>GÖMÜLÜ SİSTEMLER LABORATUVARI</h3>
-                <p className="imageTextp"> Gömülü ve Sensör Sistemleri Laboratuvarı, Kocaeli Üniversitesi Mühendislik Fakültesi<br></br> çatısı altında faaliyet gösteren bir araştırma ve geliştirme laboratuvarıdır.<br></br> Lisans, yüksek lisans ve doktora öğrencilerimizin mühendislik alanlarında deneyim <br></br>  kazanmaları ve uzmanlaşmaları hedeflenmektedir.</p>
+                <img src={backg3} className="image" style={{height:"20%"}} alt="background" />
+                <h2 className="imageTexth1 fontlight" style={{fontSize:"43px"}}>KOCAELİ ÜNİVERSİTESİ</h2>
+                <h3 className="imageTexth2 font900" style={{fontSize:"35px"}}>GÖMÜLÜ SİSTEMLER LABORATUVARI</h3>
+                <p className="imageTextp font300"> Gömülü ve Sensör Sistemleri Laboratuvarı, Kocaeli Üniversitesi Mühendislik Fakültesi çatısı altında faaliyet gösteren bir araştırma ve geliştirme laboratuvarıdır. Lisans, yüksek lisans ve doktora öğrencilerimizin mühendislik alanlarında deneyim kazanmaları ve uzmanlaşmaları hedeflenmektedir.</p>
              </div> 
              {/* TODO: cardların arasını 0la ve aralarını beyaz cizgilerle belirle */}
              <div>
@@ -58,6 +62,7 @@ return (
                     <Card.Img variant="top" src={iconyayin} style={{ width: 50, height:50 , alignSelf:"center" , marginTop:15}} />
                     <Card.Body style= {{color:"white", textAlign:"center"}}>
                       <Card.Text  style={{fontWeight:"lighter",fontSize:"22px"}}>Yayınlar</Card.Text>
+                      <br></br>
                       <Card.Text className="fontnormal" style={{fontSize:"35px"}}>70+</Card.Text>
                     </Card.Body>
                   </Card>
@@ -65,32 +70,57 @@ return (
                     <Card.Img variant="top" src={iconproje} style={{ width: 35, height:50 , alignSelf:"center", marginTop:12}} />
                     <Card.Body style= {{color:"white", textAlign:"center"}}>
                       <Card.Text  style={{fontWeight:"lighter",fontSize:"22px"}}>Tamamlanmış Proje</Card.Text>
+                      <br></br>
                       <Card.Text className="fontnormal" style={{fontSize:"35px"}}>10+</Card.Text>
                     </Card.Body>
                   </Card>
                 </CardGroup>
              </div>
+
+  {/* YAPILANLAR */}
              {/* TODO:Carousele 3 kart eklenecek icon ve yazıların yerleri düzeltilecek: */}
-             {/* FIXME:yazılar ve icon duzenlendi kalan 2 kart eklenecek */}
-             <div style={{height:"475px"}}>
-                  <Carousel variant="dark" className="a" style={{justifyContent:"center", display:"flex",height:"auto"}}>
+             <div style={{height:"530px"}}>
+                  <Carousel variant="dark" className="a" style={{justifyContent:"center", display:"flex",margin:"50px",marginTop:"50px"}}>
                     <Carousel.Item>
-                        <img src={iconeye} alt="First slide" style={{width:"8%", display:"flex",margin:"100px",marginLeft:"380px",marginTop:"50px",marginBottom:"100px"}}/>
-                        <div style={{marginTop:"200px"}}>
-                        <Carousel.Caption>
-                          <h1 style={{fontSize:"60px",margin:"100px",marginLeft:"280px",marginBottom:"0px"}} >Bilgisayarlı Görü</h1>
-                          <p style={{textAlign:"left",marginLeft:"170px",fontSize:"20px",marginBottom:"0px",marginTop:"70px"}}>Farklı alanlardaki çeşitli ihtiyaçlar için derin öğrenme modellerine dayalı <br></br> nesne tanımlama sistemleri geliştiriyoruz.
-                            Bilgisayarlı görü ekibimiz,<br></br> görüntü, video ve akış girdileri üzerindeki nesneleri algılamak ve tespit<br></br> etmek için çeşitli modüler çözümler geliştirmektir.
+                        <img src={iconeye} alt="First slide" style={{width:"7%", display:"flex",margin:"100px",marginLeft:"350px",marginTop:"50px",marginBottom:"100px"}}/>
+                        <div style={{marginTop:"215px"}}>
+                        <Carousel.Caption >
+                          <h1 className="fontnormal" style={{fontSize:"50px",margin:"100px",marginLeft:"240px",marginBottom:"0px"}} >BİLGİSAYARLI GÖRÜ</h1>
+                          <div>
+                          <p style={{textAlign:"start",marginLeft:"110px",fontSize:"20px",marginTop:"60px"}}>Farklı alanlardaki çeşitli ihtiyaçlar için derin öğrenme  modellerine dayalı nesne tanımlama sistemleri geliştiriyoruz.
+                            Bilgisayarlı görü ekibimiz, görüntü, video ve <br></br>akış girdileri üzerindeki nesneleri algılamak ve tespit etmek için çeşitli modüler<br></br> çözümler geliştirmektir.
                           </p>
+                          </div>
                         </Carousel.Caption>
                         </div>
                     </Carousel.Item>
               </Carousel>
              </div>
-              <div className="imageWrapper fontAll">
-                <img src={backg2} className="background-image image" style={{width:"100%", height:"20%"}} alt="background2"/>   
+
+  {/* PROJELER */}
+             <div className="imageWrapper fontAll">
+                <img src={backg2} className="image" style={{height:"20%"}} alt="background2"/>   
                 <h3 className="imageprojeTexth1 font500" style={{fontSize:"70px"}}>PROJELERİMİZ</h3>
+                <div style={{height:"530px",position:"absolute",marginLeft:"300px"}}>
+                <Carousel variant="dark" className="a" style={{justifyContent:"center", display:"flex"}}>
+                    <Carousel.Item>
+                        <img src={iconeye} alt="First slide" style={{width:"7%", display:"flex",margin:"100px",marginLeft:"350px",marginTop:"50px",marginBottom:"100px"}}/>
+                        <div style={{marginTop:"215px"}}>
+                        <Carousel.Caption >
+                          <h1 className="fontnormal" style={{fontSize:"50px",margin:"100px",marginLeft:"240px",marginBottom:"0px"}} >BİLGİSAYARLI GÖRÜ</h1>
+                          <div>
+                          <p style={{textAlign:"start",marginLeft:"110px",fontSize:"20px",marginTop:"60px"}}>Farklı alanlardaki çeşitli ihtiyaçlar için derin öğrenme  modellerine dayalı nesne tanımlama sistemleri geliştiriyoruz.
+                            Bilgisayarlı görü ekibimiz, görüntü, video ve <br></br>akış girdileri üzerindeki nesneleri algılamak ve tespit etmek için çeşitli modüler<br></br> çözümler geliştirmektir.
+                          </p>
+                          </div>
+                        </Carousel.Caption>
+                        </div>
+                    </Carousel.Item>
+              </Carousel>
+              </div>
              </div> 
+
+  {/* CONTACT */}
              <div>
              <CardGroup className="a" style={{justifyContent:"center", display:"flex",marginRight:"150px", marginLeft:"150px"}}>
                   <Card  style={{borderRadius:"0px", height:"150px",borderWidth:"0px",wordWrap:"break-word",marginBottom:"25px",marginTop:"10px"}} >
@@ -114,6 +144,7 @@ return (
                   </Card>
                 </CardGroup>
              </div>
+  {/* SING */}
              <div style={{backgroundColor:"#2c8e32", width:"auto",paddingTop:"25px",paddingBottom:"20px"}}>
               <h3 style={{color:"white",justifyContent:"center", display:"flex",fontWeight:"lighter",fontSize:"22px"}}>2022 KOU Embedded System Laboratory - All Rights Reserved.</h3>
               <h3 style={{color:"white",justifyContent:"center", display:"flex",fontWeight:"lighter",fontSize:"22px"}}>Developed by ...</h3>

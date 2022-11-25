@@ -20,22 +20,23 @@ font-family: 'Roboto', sans-serif;
 .imageTexth1{
   position: absolute;
   bottom:75%;
-  left: 50%;
+  left: 45%;
   text-align:start;
   color: #2c8e32;
 }
 .imageTexth2{
   position: absolute;
-  bottom:70%;
-  left: 50%;
+  bottom:69%;
+  left: 45%;
   text-align:start;
   color: #2c8e32;
 }
 .imageTextp{
   position: absolute;
-  bottom:45%;
+  bottom:30%;
   left: 48%;
   text-align:start;
+  font-size: 20px;
 }
 .imageprojeTexth1{
   position: absolute;
@@ -46,9 +47,7 @@ font-family: 'Roboto', sans-serif;
   border-bottom: 3px solid whitesmoke;
   border-bottom-style: inset 
 }
-/* .fontFamily{
-font-family: 'Roboto', sans-serif;
-} */
+
 .fontlight{
   font-family: 'Roboto', sans-serif;
   font-weight: lighter;
@@ -69,8 +68,19 @@ font-family: 'Roboto', sans-serif;
   font-family: 'Roboto', sans-serif;
   font-weight:300;
 }
+.font900{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+}
 .a{
   display: grid;
   grid-template-columns: 10rem 10rem 10rem;
   grid-gap: 1rem;
+}
+
+.navbarunderline{
+  margin-right: 20px;
+  border-bottom: 1px solid #2c8e32;
+  border-bottom-style: inset 
+ 
 }
