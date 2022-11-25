@@ -113,7 +113,5 @@ fontfamily kaldırdım *{} altına koydum tüm yazılara roboto vermis oldum
 
 <!-- <br> </br> alt satıra geçirir -->
 navbar edited
-
 yapılanlar carousel fixed
-
 projelerimiz carousel backgrounddaki resmin üzerine yerleştirildi
