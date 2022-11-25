@@ -23,6 +23,7 @@ In this website you can find the lectures for embedded systems, you can also vie
 
 You can also reach out to the laboratory with contact me section.
 
+![embedded_son_Çalışma Yüzeyi -git](https://user-images.githubusercontent.com/58826644/204058284-fa49340d-cc10-41c1-82fc-4dfd505ea1ce.png)
 ## Installing
 + Node.js
 + Visual Studio Code
