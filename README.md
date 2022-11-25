@@ -10,7 +10,7 @@ This website is an static website for kocaeli university students and for those 
 + [General Info](https://github.com/caglaozbb/kouembedded#general-info)
 + [Installing](https://github.com/caglaozbb/kouembedded#installing)
 + [Built With](https://github.com/caglaozbb/kouembedded#built-with)
-+ [ScreenShots](https://github.com/caglaozbb/kouembedded#designs)
++ [Designs](https://github.com/caglaozbb/kouembedded#designs)
 
 ## General Info
 
