@@ -11,6 +11,8 @@ import iconeye from './images/iconeye.png'
 import proje1 from './images/proje1.png'
 import proje2 from './images/proje2.png'
 import proje3 from './images/proje3.png'
+import iconai from './images/iconai.png'
+import iconpc from './images/iconpc.png'
 import './App.css'
 import Card from 'react-bootstrap/Card'
 import CardGroup from 'react-bootstrap/CardGroup'
@@ -93,6 +95,32 @@ return (
                           <div>
                           <p style={{textAlign:"start",marginLeft:"110px",fontSize:"1.25vw",marginTop:"60px"}}>Farklı alanlardaki çeşitli ihtiyaçlar için derin öğrenme  modellerine dayalı nesne tanımlama sistemleri geliştiriyoruz.
                             Bilgisayarlı görü ekibimiz, görüntü, video ve <br></br>akış girdileri üzerindeki nesneleri algılamak ve tespit etmek için çeşitli modüler<br></br> çözümler geliştirmektir.
+                          </p>
+                          </div>
+                        </Carousel.Caption>
+                        </div>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img src={iconai} alt="First slide" style={{width:"7%", display:"flex",margin:"100px",marginLeft:"350px",marginTop:"50px",marginBottom:"100px"}}/>
+                        <div style={{marginTop:"215px"}}>
+                        <Carousel.Caption >
+                          <h1 className="fontnormal" style={{fontSize:"3.125vw",margin:"100px",marginLeft:"240px",marginBottom:"80px"}} >YAPAY ZEKA ÇÖZÜMLERİ</h1>
+                          <div>
+                          <p style={{textAlign:"start",marginLeft:"110px",fontSize:"1.25vw",marginTop:"30px"}}>Gömülü sistemler laboratuvarı içerisinde yapay zekâ alanında Makine Öğrenmesi, Derin Öğrenme, Doğal Dil İşleme ve 
+                          Bilgisayarlı Görü gibi alanlardaki bilgi birikimlerinden faydalanarak işletmelerin sorunlarına ve isterlerine ideal ve etkili çözümler üretilmektedir.
+                          </p>
+                          </div>
+                        </Carousel.Caption>
+                        </div>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img src={iconpc} alt="First slide" style={{width:"10%", display:"flex",margin:"100px",marginLeft:"350px",marginTop:"50px",marginBottom:"100px"}}/>
+                        <div style={{marginTop:"215px"}}>
+                        <Carousel.Caption >
+                          <h1 className="fontnormal" style={{fontSize:"3.125vw",margin:"100px",marginLeft:"240px",marginBottom:"80px"}} >YAZILIM GELİŞTİRME</h1>
+                          <div>
+                          <p style={{textAlign:"start",marginLeft:"110px",fontSize:"1.25vw",marginTop:"60px"}}>Yazılım geliştirme ekibimiz ile işletmelerin isteğine göre geliştirilecek projenin zamanını ve maliyetini tahmin etmekte ve sonrasında ürün tasarımı ve geliştirme 
+                          aşamalarını gerçekleştirmekteyiz. Son aşamada ürünün test sürecini tamamlayıp projeyi teslime hazır hale getirmekteyiz.
                           </p>
                           </div>
                         </Carousel.Caption>
