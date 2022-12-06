@@ -115,3 +115,10 @@ fontfamily kaldırdım *{} altına koydum tüm yazılara roboto vermis oldum
 navbar edited
 yapılanlar carousel fixed
 projelerimiz carousel backgrounddaki resmin üzerine yerleştirildi
+
+carousel image
+,margin:"100px",marginLeft:"350px",marginTop:"50px",marginBottom:"100px"
+h1
+margin:"100px",marginLeft:"240px",marginBottom:"0px"
+p
+textAlign:"start",marginLeft:"110px",fontSize:"1.25vw",marginTop:"60px"

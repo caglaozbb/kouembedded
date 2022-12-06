@@ -51,62 +51,59 @@ return (
                 <h2 className="imageTexth1 fontlight" style={{fontSize:"2.8125vw"}}>KOCAELİ ÜNİVERSİTESİ</h2>
                 <h3 className="imageTexth2 font900" style={{fontSize:"2.1875vw"}}>GÖMÜLÜ SİSTEMLER LABORATUVARI</h3>
                 <p className="imageTextp font300" style={{fontSize:"1.25vw"}}> Gömülü ve Sensör Sistemleri Laboratuvarı, Kocaeli Üniversitesi Mühendislik Fakültesi çatısı altında faaliyet gösteren bir araştırma ve geliştirme laboratuvarıdır. Lisans, yüksek lisans ve doktora öğrencilerimizin mühendislik alanlarında deneyim kazanmaları ve uzmanlaşmaları hedeflenmektedir.</p>
-             {/* TODO: cardların aralarını beyaz cizgilerle belirle */}
-             <div style={{position:"absolute",marginTop:"40%",width:"100%"}}>
-                <CardGroup style={{justifyContent:"center", display:"flex",marginRight:"15%",marginLeft:"15%"}}>
-                  <Card style={{backgroundColor:"#2c8e32",height:"auto"}} >
-                    <Card.Img variant="top" src={iconogrenci} style={{width:"15%", alignSelf:"center" , marginTop:"10%"}}/>
-                    <Card.Body style= {{color:"white", textAlign:"center"}}>
-                      <Card.Text  style={{fontWeight:"lighter",fontSize:"1.375vw",padding:"0px", margin:"0px"}}>Yüksek Lisans ve Lisans</Card.Text>
-                      <Card.Text  style={{fontWeight:"lighter", alignSelf:"center",fontSize:"1.375vw"}}>Öğrencileri</Card.Text>
-                      <Card.Text className="fontnormal" style={{fontSize:"2.1875vw"}}>20+</Card.Text>
-                    </Card.Body>
-                  </Card>
-                  <Card  style={{backgroundColor:"#04a151",height:"auto"}}>
-                    <Card.Img variant="top" src={iconyayin} style={{width:"15%", alignSelf:"center" , marginTop:"10%"}} />
-                    <Card.Body style= {{color:"white", textAlign:"center"}}>
-                      <br></br>
-                      <Card.Text  style={{fontWeight:"lighter",fontSize:"1.375vw"}}>Yayınlar</Card.Text>
-                      <br></br>
-                      <Card.Text className="fontnormal" style={{fontSize:"2.1875vw"}}>70+</Card.Text>
-                    </Card.Body>
-                  </Card>
-                  <Card style={{backgroundColor:"#2c8e32",height:"auto"}}>
-                    <Card.Img variant="top" src={iconproje} style={{width:"10%", alignSelf:"center", marginTop:"10%"}} />
-                    <Card.Body style= {{color:"white", textAlign:"center"}}>
-                      <Card.Text  style={{fontWeight:"lighter",fontSize:"1.375vw"}}>Tamamlanmış Proje</Card.Text>
-                      <br></br>
-                      <Card.Text className="fontnormal" style={{fontSize:"2.1875vw"}}>10+</Card.Text>
-                    </Card.Body>
-                  </Card>
-                </CardGroup>
-              </div>
+                <div style={{position:"absolute",marginTop:"40%",width:"100%"}}>
+                    <CardGroup style={{justifyContent:"center", display:"flex",marginRight:"15%",marginLeft:"15%"}}>
+                      <Card style={{backgroundColor:"#2c8e32",height:"auto",borderRightColor:"whitesmoke",borderRightWidth:"2px"}} >
+                        <Card.Img variant="top" src={iconogrenci} style={{width:"15%", alignSelf:"center" , marginTop:"10%"}}/>
+                        <Card.Body style= {{color:"white", textAlign:"center"}}>
+                          <Card.Text  style={{fontWeight:"lighter",fontSize:"1.375vw"}}>Yüksek Lisans ve Lisans <br></br>Öğrencileri</Card.Text>
+                          <Card.Text className="fontnormal" style={{fontSize:"2.1875vw"}}>20+</Card.Text>
+                        </Card.Body>
+                      </Card>
+                      <Card  style={{backgroundColor:"#04a151",height:"auto",borderRightColor:"whitesmoke",borderRightWidth:"2px"}}>
+                        <Card.Img variant="top" src={iconyayin} style={{width:"15%", alignSelf:"center" , marginTop:"10%"}} />
+                        <Card.Body style= {{color:"white", textAlign:"center"}}>
+                          <Card.Text  style={{fontWeight:"lighter",fontSize:"1.375vw", marginTop:"5%"}}>Yayınlar</Card.Text>
+                          <br></br>
+                          <Card.Text className="fontnormal" style={{fontSize:"2.1875vw"}}>70+</Card.Text>
+                        </Card.Body>
+                      </Card>
+                      <Card style={{backgroundColor:"#2c8e32",height:"auto"}}>
+                        <Card.Img variant="top" src={iconproje} style={{width:"10%", alignSelf:"center", marginTop:"10%"}} />
+                        <Card.Body style= {{color:"white", textAlign:"center"}}>
+                          <Card.Text  style={{fontWeight:"lighter",fontSize:"1.375vw"}}>Tamamlanmış Proje</Card.Text>
+                          <br></br>
+                          <Card.Text className="fontnormal" style={{fontSize:"2.1875vw"}}>10+</Card.Text>
+                        </Card.Body>
+                      </Card>
+                    </CardGroup>
+                  </div>
              </div>
 
   {/* YAPILANLAR */}
-             {/* TODO:Carousele 3 kart eklenecek icon ve yazıların yerleri düzeltilecek: */}
+  {/* FIXME: slide true yap  */}
              <div style={{height:"450px",width:"100%"}}>
-                  <Carousel variant="dark" className="a" style={{justifyContent:"center", display:"flex",margin:"50px",marginTop:"200px",marginBottom:"0px"}}>
+                  <Carousel slide={true} indicators={false}  variant="dark" className="a" style={{justifyContent:"center", display:"flex",margin:"50px",marginTop:"200px",marginBottom:"0px"}}>
                     <Carousel.Item>
-                        <img src={iconeye} alt="First slide" style={{width:"7%", display:"flex",margin:"100px",marginLeft:"350px",marginTop:"50px",marginBottom:"100px"}}/>
-                        <div style={{marginTop:"215px"}}>
+                        <img src={iconeye} alt="First slide" style={{width:"10%", display:"flex",marginLeft:"25%",marginTop:"5%"}}/>
+                        <div style={{marginTop:"15%"}}>
                         <Carousel.Caption >
-                          <h1 className="fontnormal" style={{fontSize:"3.125vw",margin:"100px",marginLeft:"240px",marginBottom:"0px"}} >BİLGİSAYARLI GÖRÜ</h1>
+                          <h1 className="fontnormal" style={{fontSize:"3.125vw",marginBottom:"10%",marginLeft:"10%"}} >BİLGİSAYARLI GÖRÜ</h1>
                           <div>
-                          <p style={{textAlign:"start",marginLeft:"110px",fontSize:"1.25vw",marginTop:"60px"}}>Farklı alanlardaki çeşitli ihtiyaçlar için derin öğrenme  modellerine dayalı nesne tanımlama sistemleri geliştiriyoruz.
-                            Bilgisayarlı görü ekibimiz, görüntü, video ve <br></br>akış girdileri üzerindeki nesneleri algılamak ve tespit etmek için çeşitli modüler<br></br> çözümler geliştirmektir.
+                          <p style={{textAlign:"start",fontSize:"1.25vw",marginLeft:"10%",marginRight:"10%"}}>Farklı alanlardaki çeşitli ihtiyaçlar için derin öğrenme  modellerine dayalı nesne tanımlama sistemleri geliştiriyoruz.
+                            Bilgisayarlı görü ekibimiz, görüntü, video ve akış girdileri üzerindeki nesneleri algılamak ve tespit etmek için çeşitli modüler çözümler geliştirmektir.
                           </p>
                           </div>
                         </Carousel.Caption>
                         </div>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img src={iconai} alt="First slide" style={{width:"7%", display:"flex",margin:"100px",marginLeft:"350px",marginTop:"50px",marginBottom:"100px"}}/>
-                        <div style={{marginTop:"215px"}}>
+                        <img src={iconai} alt="First slide" style={{width:"10%", display:"flex",marginLeft:"25%",marginTop:"5%"}}/>
+                        <div style={{marginTop:"15%"}}>
                         <Carousel.Caption >
-                          <h1 className="fontnormal" style={{fontSize:"3.125vw",margin:"100px",marginLeft:"240px",marginBottom:"80px"}} >YAPAY ZEKA ÇÖZÜMLERİ</h1>
+                          <h1 className="fontnormal" style={{fontSize:"3.125vw",marginLeft:"15%",marginBottom:"10%"}} >YAPAY ZEKA ÇÖZÜMLERİ</h1>
                           <div>
-                          <p style={{textAlign:"start",marginLeft:"110px",fontSize:"1.25vw",marginTop:"30px"}}>Gömülü sistemler laboratuvarı içerisinde yapay zekâ alanında Makine Öğrenmesi, Derin Öğrenme, Doğal Dil İşleme ve 
+                          <p style={{textAlign:"start",fontSize:"1.25vw",marginLeft:"10%",marginRight:"10%"}}>Gömülü sistemler laboratuvarı içerisinde yapay zekâ alanında Makine Öğrenmesi, Derin Öğrenme, Doğal Dil İşleme ve 
                           Bilgisayarlı Görü gibi alanlardaki bilgi birikimlerinden faydalanarak işletmelerin sorunlarına ve isterlerine ideal ve etkili çözümler üretilmektedir.
                           </p>
                           </div>
@@ -114,12 +111,12 @@ return (
                         </div>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img src={iconpc} alt="First slide" style={{width:"10%", display:"flex",margin:"100px",marginLeft:"350px",marginTop:"50px",marginBottom:"100px"}}/>
-                        <div style={{marginTop:"215px"}}>
+                        <img src={iconpc} alt="First slide" style={{width:"10%", display:"flex",marginLeft:"25%",marginTop:"5%"}}/>
+                        <div style={{marginTop:"15%"}}>
                         <Carousel.Caption >
-                          <h1 className="fontnormal" style={{fontSize:"3.125vw",margin:"100px",marginLeft:"240px",marginBottom:"80px"}} >YAZILIM GELİŞTİRME</h1>
+                          <h1 className="fontnormal" style={{fontSize:"3.125vw",marginLeft:"15%",marginBottom:"7%"}} >YAZILIM GELİŞTİRME</h1>
                           <div>
-                          <p style={{textAlign:"start",marginLeft:"110px",fontSize:"1.25vw",marginTop:"60px"}}>Yazılım geliştirme ekibimiz ile işletmelerin isteğine göre geliştirilecek projenin zamanını ve maliyetini tahmin etmekte ve sonrasında ürün tasarımı ve geliştirme 
+                          <p style={{textAlign:"start",fontSize:"1.25vw",marginLeft:"10%",marginRight:"10%",marginTop:"5%"}}>Yazılım geliştirme ekibimiz ile işletmelerin isteğine göre geliştirilecek projenin zamanını ve maliyetini tahmin etmekte ve sonrasında ürün tasarımı ve geliştirme 
                           aşamalarını gerçekleştirmekteyiz. Son aşamada ürünün test sürecini tamamlayıp projeyi teslime hazır hale getirmekteyiz.
                           </p>
                           </div>
@@ -130,11 +127,16 @@ return (
              </div>
 
   {/* PROJELER */}
+  {/* TODO:kalan proje kartları eklenecek
+      TODO:carousel indicator kaldırılacak
+      TODO:detaylar kısmı düzeltilecek
+      TODO:responsive yapılacak. 
+      FIXME:sağ ve soldaki cardların koseleri duzeltilecek*/}
              <div className="imageWrapper fontAll">
                 <img src={backg2} className="image" style={{height:"20%"}} alt="background2"/>   
                 <h3 className="imageprojeTexth1 font500" style={{fontSize:"4.375vw"}}>PROJELERİMİZ</h3>
                 <div style={{position:"absolute",marginTop:"20%",width:"100%"}}>
-                <Carousel  className="a" style={{justifyContent:"center", display:"flex",width:"auto"}}>
+                <Carousel slide={true} indicators={false} className="a" style={{justifyContent:"center", display:"flex",width:"auto"}}>
                   <Carousel.Item>
                     <CardGroup className="a" style={{justifyContent:"center", display:"flex",marginRight:"150px", marginLeft:"150px"}}>
                         <Card className="backgroundcard">
