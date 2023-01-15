@@ -89,6 +89,11 @@ font-family: 'Roboto', sans-serif;
   border-bottom: 1px solid #2c8e32;
   border-bottom-style: inset 
 }
+.ekipunderline{
+  border-width: 60%;  
+  border-bottom: 3px solid #2c8e32;
+  border-bottom-style: inset 
+}
 .backgroundcard{
   background-color:rgba(245, 245, 245, 0.2 );
 }

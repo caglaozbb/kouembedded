@@ -122,3 +122,5 @@ h1
 margin:"100px",marginLeft:"240px",marginBottom:"0px"
 p
 textAlign:"start",marginLeft:"110px",fontSize:"1.25vw",marginTop:"60px"
+
+CardGroup className="a" style={{justifyContent:"center", display:"flex",marginRight:"200px", marginLeft:"200px"}}
