@@ -124,3 +124,6 @@ p
 textAlign:"start",marginLeft:"110px",fontSize:"1.25vw",marginTop:"60px"
 
 CardGroup className="a" style={{justifyContent:"center", display:"flex",marginRight:"200px", marginLeft:"200px"}}
+
+CardGroup className="a mx-auto" style={{ display:"flex",width:"50%"}}
+

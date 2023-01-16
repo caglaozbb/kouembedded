@@ -45,50 +45,176 @@ return (
                 </div>
 
 {/* ekibimiz */}
-                <div style={{marginTop:"100px"}}className="fontAll">
+                <div style={{marginTop:"100px"}} className="fontAll">
                 <h3 className="font500" style={{fontSize:"3.125vw", display: "flex", justifyContent: "center"}}>EKİP ÜYELERİ</h3>
-                <div style={{marginTop:"20%",width:"100%"}}>
-                    <CardGroup className="a" style={{justifyContent:"center", display:"flex",marginRight:"200px", marginLeft:"200px"}}>
-                        <Card className="backgroundcard">
-                          <Card.Img variant="top" src={person1} style={{alignSelf:"center"}}/>
-                          <Card.Body style= {{color:"white", textAlign:"center"}}>
-                           <Card.Text className="font500" style={{textAlign:"start",fontSize:"1.25vw",padding:"0px", margin:"0px"}}>YASAKLI ALAN İHLALİ TESPİTİ<br></br></Card.Text>
-                            <br></br>
-                            <br></br>
-                            <br></br>
-                            <Card.Text className="font400" style={{fontSize:"1vw", textAlign:"start"}}>Fabrikadaki forklift kazalarını gidermek amacıyla...</Card.Text>
-                            <Card.Text className="fontnormal" style={{fontSize:"1vw", textAlign:"end",paddingTop:"6px"}}>Detaylar &gt;</Card.Text>
+                <div  style={{marginTop:"5%"}}>
+                    <CardGroup className="c mx-auto" style={{ display:"flex",width:"50%"}}>
+                        <Card className="backgroundcardekip" >
+                          <Card.Img variant="top" src={person1} style={{borderRadius:"0"}}/>
+                          <Card.Body style= {{color:"white", textAlign:"center",margin:"5%",padding:"0px"}}>
+                           <Card.Text className="font300" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>Doç. Dr. <br></br>Suhap ŞAHİN</Card.Text>
+                           <Card.Text className="image-overlay" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>+90 0530 540 1163<br></br>suhapsahin@kocaeli.edu.tr</Card.Text>
                           </Card.Body>
                         </Card>
-                        <Card className="backgroundcard">
-                          <Card.Img variant="top" src={person1} style={{alignSelf:"center"}} />
-                          <Card.Body style= {{color:"white", textAlign:"center",opacity:"100%"}}>
-                            <Card.Text className="font500" style={{textAlign:"start",fontSize:"1.25vw", padding:"0px", margin:"0px"}}>DİJİTAL GÖSTERGE<br></br></Card.Text>
-                            <br></br>
-                            <br></br>
-                            <br></br>
-                            <Card.Text className="font400" style={{fontSize:"1vw", textAlign:"start"}}>Günümüzde birçok sistem akıllı hale gelmişken yakıt olarak tüp...</Card.Text>
-                            <Card.Text className="fontnormal" style={{fontSize:"1vw", textAlign:"end",paddingTop:"6px"}}>Detaylar &gt;</Card.Text>
+                        <Card className="backgroundcardekip">
+                          <Card.Img variant="top" src={person1} style={{borderRadius:"0"}}/>
+                          <Card.Body style= {{color:"white", textAlign:"center",margin:"5%",padding:"0px"}}>
+                            <Card.Text className="font300" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>Asst. Prof. <br></br>Fidan KAYA GÜLAĞIZ</Card.Text>
                           </Card.Body>
                         </Card>
-                        <Card className="backgroundcard">
-                          <Card.Img variant="top" src={person1} style={{alignSelf:"center"}}/>
-                          <Card.Body style= {{color:"white", textAlign:"center"}}>
-                            <Card.Text className="font500" style={{textAlign:"start",fontSize:"1.25vw",padding:"0px", margin:"0px"}}>TÜP KİRLİLİK TESTİ<br></br></Card.Text>
-                            <br></br>
-                            <br></br>
-                            <br></br>
-                            <Card.Text className="font400" style={{fontSize:"1vw", textAlign:"start"}}>Projede tüplerin üzerindeki kirli bölgelerin tespiti ve...</Card.Text>
-                            <Card.Text className="fontnormal" style={{fontSize:"1vw", textAlign:"end",paddingTop:"6px"}}>Detaylar &gt;</Card.Text>
+                        <Card className="backgroundcardekip">
+                          <Card.Img variant="top" src={person1} style={{borderRadius:"0"}}/>
+                          <Card.Body style= {{color:"white", textAlign:"center",margin:"5%",padding:"0px"}}>
+                            <Card.Text className="font300" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>Asst. Prof. <br></br>Mehmet Ali ALTUNCU</Card.Text>
                           </Card.Body>
                         </Card>
                   </CardGroup>
-              </div>
+                  </div> 
+                  
+                  <div  style={{marginTop:"5%"}}>
+                    <CardGroup className="c mx-auto" style={{ display:"flex",width:"50%"}}>
+                        <Card className="backgroundcardekip" >
+                          <Card.Img variant="top" src={person1} style={{borderRadius:"0"}}/>
+                          <Card.Body style= {{color:"white", textAlign:"center",margin:"0px",padding:"2%"}}>
+                           <Card.Text className="font300" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>Doç. Dr. <br></br>Suhap ŞAHİN</Card.Text>
+                          </Card.Body>
+                        </Card>
+                        <Card className="backgroundcardekip">
+                          <Card.Img variant="top" src={person1} style={{borderRadius:"0"}}/>
+                          <Card.Body style= {{color:"white", textAlign:"center",margin:"0px",padding:"2%"}}>
+                            <Card.Text className="font300" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>Asst. Prof. <br></br>Fidan KAYA GÜLAĞIZ</Card.Text>
+                          </Card.Body>
+                        </Card>
+                        <Card className="backgroundcardekip">
+                          <Card.Img variant="top" src={person1} style={{borderRadius:"0"}}/>
+                          <Card.Body style= {{color:"white", textAlign:"center",margin:"0px",padding:"2%"}}>
+                            <Card.Text className="font300" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>Asst. Prof. <br></br>Mehmet Ali ALTUNCU</Card.Text>
+                          </Card.Body>
+                        </Card>
+                  </CardGroup>
+                  </div>
+
+                  <div  style={{marginTop:"5%"}}>
+                    <CardGroup className="c mx-auto" style={{ display:"flex",width:"50%"}}>
+                        <Card className="backgroundcardekip" >
+                          <Card.Img variant="top" src={person1} style={{borderRadius:"0"}}/>
+                          <Card.Body style= {{color:"white", textAlign:"center",margin:"0px",padding:"2%"}}>
+                           <Card.Text className="font300" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>Doç. Dr. <br></br>Suhap ŞAHİN</Card.Text>
+                          </Card.Body>
+                        </Card>
+                        <Card className="backgroundcardekip">
+                          <Card.Img variant="top" src={person1} style={{borderRadius:"0"}}/>
+                          <Card.Body style= {{color:"white", textAlign:"center",margin:"0px",padding:"2%"}}>
+                            <Card.Text className="font300" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>Asst. Prof. <br></br>Fidan KAYA GÜLAĞIZ</Card.Text>
+                          </Card.Body>
+                        </Card>
+                        <Card className="backgroundcardekip">
+                          <Card.Img variant="top" src={person1} style={{borderRadius:"0"}}/>
+                          <Card.Body style= {{color:"white", textAlign:"center",margin:"0px",padding:"2%"}}>
+                            <Card.Text className="font300" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>Asst. Prof. <br></br>Mehmet Ali ALTUNCU</Card.Text>
+                          </Card.Body>
+                        </Card>
+                  </CardGroup>
+                  </div>
+
+                  <div  style={{marginTop:"5%"}}>
+                    <CardGroup className="c mx-auto" style={{ display:"flex",width:"50%"}}>
+                        <Card className="backgroundcardekip" >
+                          <Card.Img variant="top" src={person1} style={{borderRadius:"0"}}/>
+                          <Card.Body style= {{color:"white", textAlign:"center",margin:"0px",padding:"2%"}}>
+                           <Card.Text className="font300" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>Doç. Dr. <br></br>Suhap ŞAHİN</Card.Text>
+                          </Card.Body>
+                        </Card>
+                        <Card className="backgroundcardekip">
+                          <Card.Img variant="top" src={person1} style={{borderRadius:"0"}}/>
+                          <Card.Body style= {{color:"white", textAlign:"center",margin:"0px",padding:"2%"}}>
+                            <Card.Text className="font300" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>Asst. Prof. <br></br>Fidan KAYA GÜLAĞIZ</Card.Text>
+                          </Card.Body>
+                        </Card>
+                        <Card className="backgroundcardekip">
+                          <Card.Img variant="top" src={person1} style={{borderRadius:"0"}}/>
+                          <Card.Body style= {{color:"white", textAlign:"center",margin:"0px",padding:"2%"}}>
+                            <Card.Text className="font300" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>Asst. Prof. <br></br>Mehmet Ali ALTUNCU</Card.Text>
+                          </Card.Body>
+                        </Card>
+                  </CardGroup>
+                  </div>
+
+                  <div  style={{marginTop:"5%"}}>
+                    <CardGroup className="c mx-auto" style={{ display:"flex",width:"50%"}}>
+                        <Card className="backgroundcardekip" >
+                          <Card.Img variant="top" src={person1} style={{borderRadius:"0"}}/>
+                          <Card.Body style= {{color:"white", textAlign:"center",margin:"0px",padding:"2%"}}>
+                           <Card.Text className="font300" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>Doç. Dr. <br></br>Suhap ŞAHİN</Card.Text>
+                          </Card.Body>
+                        </Card>
+                        <Card className="backgroundcardekip">
+                          <Card.Img variant="top" src={person1} style={{borderRadius:"0"}}/>
+                          <Card.Body style= {{color:"white", textAlign:"center",margin:"0px",padding:"2%"}}>
+                            <Card.Text className="font300" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>Asst. Prof. <br></br>Fidan KAYA GÜLAĞIZ</Card.Text>
+                          </Card.Body>
+                        </Card>
+                        <Card className="backgroundcardekip">
+                          <Card.Img variant="top" src={person1} style={{borderRadius:"0"}}/>
+                          <Card.Body style= {{color:"white", textAlign:"center",margin:"0px",padding:"2%"}}>
+                            <Card.Text className="font300" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>Asst. Prof. <br></br>Mehmet Ali ALTUNCU</Card.Text>
+                          </Card.Body>
+                        </Card>
+                  </CardGroup>
+                  </div>
+
+                  <div  style={{marginTop:"5%"}}>
+                    <CardGroup className="c mx-auto" style={{ display:"flex",width:"50%"}}>
+                        <Card className="backgroundcardekip" >
+                          <Card.Img variant="top" src={person1} style={{borderRadius:"0"}}/>
+                          <Card.Body style= {{color:"white", textAlign:"center",margin:"0px",padding:"2%"}}>
+                           <Card.Text className="font300" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>Doç. Dr. <br></br>Suhap ŞAHİN</Card.Text>
+                          </Card.Body>
+                        </Card>
+                        <Card className="backgroundcardekip">
+                          <Card.Img variant="top" src={person1} style={{borderRadius:"0"}}/>
+                          <Card.Body style= {{color:"white", textAlign:"center",margin:"0px",padding:"2%"}}>
+                            <Card.Text className="font300" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>Asst. Prof. <br></br>Fidan KAYA GÜLAĞIZ</Card.Text>
+                          </Card.Body>
+                        </Card>
+                        <Card className="backgroundcardekip">
+                          <Card.Img variant="top" src={person1} style={{borderRadius:"0"}}/>
+                          <Card.Body style= {{color:"white", textAlign:"center",margin:"0px",padding:"2%"}}>
+                            <Card.Text className="font300" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>Asst. Prof. <br></br>Mehmet Ali ALTUNCU</Card.Text>
+                          </Card.Body>
+                        </Card>
+                  </CardGroup>
+                  </div>
+
+                  <div  style={{marginTop:"5%"}}>
+                    <CardGroup className="c mx-auto" style={{ display:"flex",width:"50%"}}>
+                        <Card className="backgroundcardekip" >
+                          <Card.Img variant="top" src={person1} style={{borderRadius:"0"}}/>
+                          <Card.Body style= {{color:"white", textAlign:"center",margin:"0px",padding:"2%"}}>
+                           <Card.Text className="font300" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>Doç. Dr. <br></br>Suhap ŞAHİN</Card.Text>
+                          </Card.Body>
+                        </Card>
+                        <Card className="backgroundcardekip">
+                          <Card.Img variant="top" src={person1} style={{borderRadius:"0"}}/>
+                          <Card.Body style= {{color:"white", textAlign:"center",margin:"0px",padding:"2%"}}>
+                            <Card.Text className="font300" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>Asst. Prof. <br></br>Fidan KAYA GÜLAĞIZ</Card.Text>
+                          </Card.Body>
+                        </Card>
+                        <Card className="backgroundcardekip">
+                          <Card.Img variant="top" src={person1} style={{borderRadius:"0"}}/>
+                          <Card.Body style= {{color:"white", textAlign:"center",margin:"0px",padding:"2%"}}>
+                            <Card.Text className="font300" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>Asst. Prof. <br></br>Mehmet Ali ALTUNCU</Card.Text>
+                          </Card.Body>
+                        </Card>
+                  </CardGroup>
+                  </div>
+
+                  
              </div> 
 
 
   {/* CONTACT */}
-             <div>
+             <div style={{marginTop:"2%"}}>
              <CardGroup className="a" style={{justifyContent:"center", display:"flex",marginRight:"150px", marginLeft:"150px"}}>
                   <Card  style={{borderRadius:"0px", height:"150px",borderWidth:"0px",wordWrap:"break-word",marginBottom:"25px",marginTop:"10px"}} >
                     <Card.Body className="fontlight" style= {{color:"#2c8e32", textAlign:"center",fontSize:"15px"}}>
