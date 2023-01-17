@@ -47,9 +47,9 @@ return (
 {/* ekibimiz */}
                 <div style={{marginTop:"100px"}} className="fontAll">
                 <h3 className="font500" style={{fontSize:"3.125vw", display: "flex", justifyContent: "center"}}>EKİP ÜYELERİ</h3>
-                <div  style={{marginTop:"5%"}}>
-                    <CardGroup className="c mx-auto" style={{ display:"flex",width:"50%"}}>
-                        <Card className="backgroundcardekip" >
+                <div style={{marginTop:"5%"}}>
+                    <CardGroup className="c mx-auto" style={{ border:"0px", display:"flex",width:"50%"}}>
+                        <Card className="backgroundcardekip " >
                           <Card.Img variant="top" src={person1} style={{borderRadius:"0"}}/>
                           <Card.Body style= {{color:"white", textAlign:"center",margin:"5%",padding:"0px"}}>
                            <Card.Text className="font300" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>Doç. Dr. <br></br>Suhap ŞAHİN</Card.Text>
@@ -60,6 +60,7 @@ return (
                           <Card.Img variant="top" src={person1} style={{borderRadius:"0"}}/>
                           <Card.Body style= {{color:"white", textAlign:"center",margin:"5%",padding:"0px"}}>
                             <Card.Text className="font300" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>Asst. Prof. <br></br>Fidan KAYA GÜLAĞIZ</Card.Text>
+                            <Card.Text className="image-overlay" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>+90 0530 540 1163<br></br>suhapsahin@kocaeli.edu.tr</Card.Text>
                           </Card.Body>
                         </Card>
                         <Card className="backgroundcardekip">
