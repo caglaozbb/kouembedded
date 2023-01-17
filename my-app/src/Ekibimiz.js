@@ -44,28 +44,29 @@ return (
                 <p className="font300" style={{fontSize:"1vw",color:"whitesmoke",marginLeft:"70%",marginTop:"12%",position:"absolute"}}> Anasayfa / Ekibimiz</p>
                 </div>
 
+{/* TODO:CSS DUZENLE KİSİLERİN RESİMLERİNİ VE BİLGİLERİNİ EKLE */}
 {/* ekibimiz */}
                 <div style={{marginTop:"100px"}} className="fontAll">
                 <h3 className="font500" style={{fontSize:"3.125vw", display: "flex", justifyContent: "center"}}>EKİP ÜYELERİ</h3>
                 <div style={{marginTop:"5%"}}>
-                    <CardGroup className="c mx-auto" style={{ border:"0px", display:"flex",width:"50%"}}>
+                    <CardGroup className="c mx-auto" style={{ display:"flex",width:"50%"}}>
                         <Card className="backgroundcardekip " >
                           <Card.Img variant="top" src={person1} style={{borderRadius:"0"}}/>
-                          <Card.Body style= {{color:"white", textAlign:"center",margin:"5%",padding:"0px"}}>
+                          <Card.Body style= {{color:"white", textAlign:"center",margin:"0px",padding:"2%"}}>
                            <Card.Text className="font300" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>Doç. Dr. <br></br>Suhap ŞAHİN</Card.Text>
                            <Card.Text className="image-overlay" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>+90 0530 540 1163<br></br>suhapsahin@kocaeli.edu.tr</Card.Text>
                           </Card.Body>
                         </Card>
                         <Card className="backgroundcardekip">
                           <Card.Img variant="top" src={person1} style={{borderRadius:"0"}}/>
-                          <Card.Body style= {{color:"white", textAlign:"center",margin:"5%",padding:"0px"}}>
+                          <Card.Body style= {{color:"white", textAlign:"center",margin:"0px",padding:"2%"}}>
                             <Card.Text className="font300" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>Asst. Prof. <br></br>Fidan KAYA GÜLAĞIZ</Card.Text>
                             <Card.Text className="image-overlay" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>+90 0530 540 1163<br></br>suhapsahin@kocaeli.edu.tr</Card.Text>
                           </Card.Body>
                         </Card>
                         <Card className="backgroundcardekip">
                           <Card.Img variant="top" src={person1} style={{borderRadius:"0"}}/>
-                          <Card.Body style= {{color:"white", textAlign:"center",margin:"5%",padding:"0px"}}>
+                          <Card.Body style= {{color:"white", textAlign:"center",margin:"0px",padding:"2%"}}>
                             <Card.Text className="font300" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>Asst. Prof. <br></br>Mehmet Ali ALTUNCU</Card.Text>
                           </Card.Body>
                         </Card>
@@ -209,40 +210,40 @@ return (
                         </Card>
                   </CardGroup>
                   </div>
-
-                  
              </div> 
 
 
   {/* CONTACT */}
-             <div style={{marginTop:"2%"}}>
+             <div className="contact" style={{marginTop:"5%", backgroundColor: "#e9eef4"}}>
              <CardGroup className="a" style={{justifyContent:"center", display:"flex",marginRight:"150px", marginLeft:"150px"}}>
                   <Card  style={{borderRadius:"0px", height:"150px",borderWidth:"0px",wordWrap:"break-word",marginBottom:"25px",marginTop:"10px"}} >
-                    <Card.Body className="fontlight" style= {{color:"#2c8e32", textAlign:"center",fontSize:"15px"}}>
+                    <Card.Body className="fontlight" style= {{color:"#2c8e32", textAlign:"center",fontSize:"15px",backgroundColor: "#e9eef4"}}>
                       <Card.Text  className="font500" style={{fontSize:"18px"}}>Adres</Card.Text>
                       <Card.Text  className="font300" style={{padding:"0px",margin:"0"}}>Kocaeli Üniversitesi<br></br>Mühendislik<br></br>B Fakültesi<br></br>İzmit / Kocaeli</Card.Text>
                     </Card.Body>
                   </Card>
                   <Card  style={{borderRadius:"0px", height:"150px",borderWidth:"0px",wordWrap:"break-word",marginBottom:"25px",marginTop:"10px"}}>
-                    <Card.Body className="fontlight" style= {{color:"#2c8e32", textAlign:"center",fontSize:"15px"}}>
+                  <Card.Body className="fontlight" style= {{color:"#2c8e32", textAlign:"center",fontSize:"15px",backgroundColor: "#e9eef4"}}>
                       <Card.Text  className="font500"  style={{fontSize:"18px"}}>Çalışma Saatleri</Card.Text>
                       <Card.Text  className="font300">08:00 - 17:30</Card.Text>
                       <Card.Text  className="font300">Pazartesi - Cuma</Card.Text>
                     </Card.Body>
                   </Card>
                   <Card style={{borderRadius:"0px", height:"150px",borderWidth:"0px",wordWrap:"break-word",marginBottom:"25px",marginTop:"10px"}}>
-                    <Card.Body className="fontlight" style= {{color:"#2c8e32", textAlign:"center",fontSize:"15px"}}>
+                  <Card.Body className="fontlight" style= {{color:"#2c8e32", textAlign:"center",fontSize:"15px",backgroundColor: "#e9eef4"}}>
                       <Card.Text  className="font500"  style={{fontSize:"18px",}}>E-Mail</Card.Text>
                       <Card.Text  className="font300" style={{padding:"0px", margin:"0px"}}>embedded@kocaeli.edu.tr</Card.Text>
                     </Card.Body>
                   </Card>
                 </CardGroup>
              </div>
+             
   {/* SIGN */}
-             <div style={{backgroundColor:"#2c8e32", width:"auto",paddingTop:"25px",paddingBottom:"20px"}}>
-              <h3 style={{color:"white",justifyContent:"center", display:"flex",fontWeight:"lighter",fontSize:"22px"}}>2022 KOU Embedded System Laboratory - All Rights Reserved.</h3>
-              <h3 style={{color:"white",justifyContent:"center", display:"flex",fontWeight:"lighter",fontSize:"22px"}}>Developed by ...</h3>
+             <div style={{backgroundColor:"#2c8e32",padding:"1%"}}>
+              <h1 style={{color:"white",justifyContent:"center", display:"flex",fontWeight:"lighter",fontSize:"16px"}}>2022 KOU Embedded System Laboratory - All Rights Reserved.</h1>
+              <h1 style={{color:"white",justifyContent:"center", display:"flex",fontWeight:"lighter",fontSize:"16px",margin:"0"}}>Developed by ...</h1>
              </div>
+
         </div>
   );
 
