@@ -87,6 +87,8 @@ font-family: 'Roboto', sans-serif;
 .c{
   display: grid;
   grid-gap: 4em;
+  grid-template-columns: 10rem 10rem 10rem;
+
 }
 .navbarunderline{
   margin-right: 20px;
@@ -107,6 +109,9 @@ font-family: 'Roboto', sans-serif;
   border-radius: 0px;
 }
 .image-overlay{
+  display: grid;
+  grid-gap: 4em;
+  grid-template-columns: 10rem 10rem 10rem;
   color: aliceblue;
   display: flex;
   flex-direction: column;
