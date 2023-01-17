@@ -238,10 +238,10 @@ return (
                 </CardGroup>
              </div>
              
-  {/* SIGN */}
-             <div style={{backgroundColor:"#2c8e32",padding:"1%"}}>
-              <h1 style={{color:"white",justifyContent:"center", display:"flex",fontWeight:"lighter",fontSize:"16px"}}>2022 KOU Embedded System Laboratory - All Rights Reserved.</h1>
-              <h1 style={{color:"white",justifyContent:"center", display:"flex",fontWeight:"lighter",fontSize:"16px",margin:"0"}}>Developed by ...</h1>
+  {/* Copyrights */}
+             <div id="copyright" className="copyright">
+              <h1>2022 KOU Embedded System Laboratory - All Rights Reserved.</h1>
+              <h1>Developed by ...</h1>
              </div>
 
         </div>

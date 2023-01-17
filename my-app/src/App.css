@@ -132,6 +132,19 @@ font-family: 'Roboto', sans-serif;
   opacity: 70%;
 }
 
+.copyright{
+  background:#2c8e32 ;
+  padding: 1%;
+}
+.copyright  h1 {
+  background:#2c8e32;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-weight: lighter;
+  font-size: 1vw;
+  margin: 0;
+}
 
 
 /* .image-overlay2{

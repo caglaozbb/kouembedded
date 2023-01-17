@@ -244,11 +244,11 @@ return (
                   </Card>
                 </CardGroup>
              </div>
-  {/* SIGN */}
-             <div style={{backgroundColor:"#2c8e32", width:"auto",paddingTop:"25px",paddingBottom:"20px"}}>
-              <h3 style={{color:"white",justifyContent:"center", display:"flex",fontWeight:"lighter",fontSize:"22px"}}>2022 KOU Embedded System Laboratory - All Rights Reserved.</h3>
-              <h3 style={{color:"white",justifyContent:"center", display:"flex",fontWeight:"lighter",fontSize:"22px"}}>Developed by ...</h3>
-             </div>
+  {/* Copyrights */}
+            <div id="copyright" className="copyright">
+              <h1>2022 KOU Embedded System Laboratory - All Rights Reserved.</h1>
+              <h1>Developed by ...</h1>
+            </div>
         </div>
   );
 
