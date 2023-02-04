@@ -39,9 +39,10 @@ font-family: 'Roboto', sans-serif;
 }
 .imageprojeTexth1{
   position: absolute;
-  bottom:80%;
-  left: 32%;
-  text-align:start;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
   color: whitesmoke;
   border-bottom: 3px solid whitesmoke;
   border-bottom-style: inset 

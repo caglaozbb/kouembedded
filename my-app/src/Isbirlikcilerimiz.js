@@ -6,6 +6,7 @@ import embeddedbrosur1 from './images/embeddedbrosur1.pdf'
 import './App.css'
 import Card from 'react-bootstrap/Card'
 import CardGroup from 'react-bootstrap/CardGroup'
+import backg6 from './images/backg6.png'
 
 // TODO: fotografları importlamak icin index.js doyası olusturup icinde exportlaman ve daha sonra kullanacagın dosyalarda topluca importlayabilirsin
 export const Isbirlikcilerimiz = () => {
@@ -34,6 +35,15 @@ return (
                     </Navbar.Collapse>
                 </Navbar>
               </div>
+
+
+              <div id="header" className="imageWrapper fontAll">
+                <img src={backg6} style={{width:"100%"}} alt="ekibimiz sayfasının arka plan resmi" />
+                <h2 className="font400" style={{fontSize:"2.1875vw",position:"absolute", marginLeft:"20%",marginTop:"8%",color:"whitesmoke"}}>İŞBİRLİKÇİLERİMİZ</h2>
+                <h3 className="font900" style={{fontSize:"0.75vw",position:"absolute", marginLeft:"20%",marginTop:"12%",color:"#2c8e32"}}>İŞİMİZİ ÇOK SEVİYORUZ</h3>
+                <p className="font300" style={{fontSize:"1vw",color:"whitesmoke",marginLeft:"70%",marginTop:"12%",position:"absolute"}}> Anasayfa / İşbirlikçilerimiz</p>
+                </div>
+
 
   {/* CONTACT */}
              <div>

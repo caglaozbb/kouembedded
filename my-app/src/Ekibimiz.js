@@ -2,7 +2,7 @@ import React from "react"
 import { Container, Nav, Navbar, Button} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import logo from './images/logo.png'
-import backg6 from './images/backg6.png'
+import backg3 from './images/backg3.png'
 import person1 from './images/person1.png'
 import './App.css'
 import embeddedbrosur1 from './images/embeddedbrosur1.pdf'
@@ -36,9 +36,10 @@ return (
                     </Navbar.Collapse>
                 </Navbar>
               </div>
-  {/* Landing */}
-              <div className="imageWrapper fontAll">
-                <img src={backg6} style={{width:"100%"}} alt="ekibimiz sayfasının arka plan resmi" />
+
+  {/* Header (buradaki tüm child elementi için css olusturulmalı mı yoksa özel cssleri olması mı daha dogru olur?)*/}
+              <div id="header" className="imageWrapper fontAll">
+                <img src={backg3} style={{width:"100%"}} alt="ekibimiz sayfasının arka plan resmi" />
                 <h2 className="font400" style={{fontSize:"2.1875vw",position:"absolute", marginLeft:"20%",marginTop:"8%",color:"whitesmoke"}}>EKİBİMİZ</h2>
                 <h3 className="font900" style={{fontSize:"0.75vw",position:"absolute", marginLeft:"20%",marginTop:"12%",color:"#2c8e32"}}>İŞİMİZİ ÇOK SEVİYORUZ</h3>
                 <p className="font300" style={{fontSize:"1vw",color:"whitesmoke",marginLeft:"70%",marginTop:"12%",position:"absolute"}}> Anasayfa / Ekibimiz</p>
@@ -68,6 +69,7 @@ return (
                           <Card.Img variant="top" src={person1} style={{borderRadius:"0"}}/>
                           <Card.Body style= {{color:"white", textAlign:"center",margin:"0px",padding:"2%"}}>
                             <Card.Text className="font300" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>Asst. Prof. <br></br>Mehmet Ali ALTUNCU</Card.Text>
+                            <Card.Text className="image-overlay" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>+90 0530 540 1163<br></br>suhapsahin@kocaeli.edu.tr</Card.Text>
                           </Card.Body>
                         </Card>
                   </CardGroup>
@@ -79,18 +81,21 @@ return (
                           <Card.Img variant="top" src={person1} style={{borderRadius:"0"}}/>
                           <Card.Body style= {{color:"white", textAlign:"center",margin:"0px",padding:"2%"}}>
                            <Card.Text className="font300" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>Doç. Dr. <br></br>Suhap ŞAHİN</Card.Text>
+                           <Card.Text className="image-overlay" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>+90 0530 540 1163<br></br>suhapsahin@kocaeli.edu.tr</Card.Text>
                           </Card.Body>
                         </Card>
                         <Card className="backgroundcardekip">
                           <Card.Img variant="top" src={person1} style={{borderRadius:"0"}}/>
                           <Card.Body style= {{color:"white", textAlign:"center",margin:"0px",padding:"2%"}}>
                             <Card.Text className="font300" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>Asst. Prof. <br></br>Fidan KAYA GÜLAĞIZ</Card.Text>
+                            <Card.Text className="image-overlay" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>+90 0530 540 1163<br></br>suhapsahin@kocaeli.edu.tr</Card.Text>
                           </Card.Body>
                         </Card>
                         <Card className="backgroundcardekip">
                           <Card.Img variant="top" src={person1} style={{borderRadius:"0"}}/>
                           <Card.Body style= {{color:"white", textAlign:"center",margin:"0px",padding:"2%"}}>
                             <Card.Text className="font300" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>Asst. Prof. <br></br>Mehmet Ali ALTUNCU</Card.Text>
+                            <Card.Text className="image-overlay" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>+90 0530 540 1163<br></br>suhapsahin@kocaeli.edu.tr</Card.Text>
                           </Card.Body>
                         </Card>
                   </CardGroup>
@@ -102,18 +107,21 @@ return (
                           <Card.Img variant="top" src={person1} style={{borderRadius:"0"}}/>
                           <Card.Body style= {{color:"white", textAlign:"center",margin:"0px",padding:"2%"}}>
                            <Card.Text className="font300" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>Doç. Dr. <br></br>Suhap ŞAHİN</Card.Text>
+                           <Card.Text className="image-overlay" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>+90 0530 540 1163<br></br>suhapsahin@kocaeli.edu.tr</Card.Text>
                           </Card.Body>
                         </Card>
                         <Card className="backgroundcardekip">
                           <Card.Img variant="top" src={person1} style={{borderRadius:"0"}}/>
                           <Card.Body style= {{color:"white", textAlign:"center",margin:"0px",padding:"2%"}}>
                             <Card.Text className="font300" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>Asst. Prof. <br></br>Fidan KAYA GÜLAĞIZ</Card.Text>
+                            <Card.Text className="image-overlay" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>+90 0530 540 1163<br></br>suhapsahin@kocaeli.edu.tr</Card.Text>
                           </Card.Body>
                         </Card>
                         <Card className="backgroundcardekip">
                           <Card.Img variant="top" src={person1} style={{borderRadius:"0"}}/>
                           <Card.Body style= {{color:"white", textAlign:"center",margin:"0px",padding:"2%"}}>
                             <Card.Text className="font300" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>Asst. Prof. <br></br>Mehmet Ali ALTUNCU</Card.Text>
+                            <Card.Text className="image-overlay" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>+90 0530 540 1163<br></br>suhapsahin@kocaeli.edu.tr</Card.Text>
                           </Card.Body>
                         </Card>
                   </CardGroup>
@@ -125,18 +133,21 @@ return (
                           <Card.Img variant="top" src={person1} style={{borderRadius:"0"}}/>
                           <Card.Body style= {{color:"white", textAlign:"center",margin:"0px",padding:"2%"}}>
                            <Card.Text className="font300" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>Doç. Dr. <br></br>Suhap ŞAHİN</Card.Text>
+                           <Card.Text className="image-overlay" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>+90 0530 540 1163<br></br>suhapsahin@kocaeli.edu.tr</Card.Text>
                           </Card.Body>
                         </Card>
                         <Card className="backgroundcardekip">
                           <Card.Img variant="top" src={person1} style={{borderRadius:"0"}}/>
                           <Card.Body style= {{color:"white", textAlign:"center",margin:"0px",padding:"2%"}}>
                             <Card.Text className="font300" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>Asst. Prof. <br></br>Fidan KAYA GÜLAĞIZ</Card.Text>
+                            <Card.Text className="image-overlay" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>+90 0530 540 1163<br></br>suhapsahin@kocaeli.edu.tr</Card.Text>
                           </Card.Body>
                         </Card>
                         <Card className="backgroundcardekip">
                           <Card.Img variant="top" src={person1} style={{borderRadius:"0"}}/>
                           <Card.Body style= {{color:"white", textAlign:"center",margin:"0px",padding:"2%"}}>
                             <Card.Text className="font300" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>Asst. Prof. <br></br>Mehmet Ali ALTUNCU</Card.Text>
+                            <Card.Text className="image-overlay" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>+90 0530 540 1163<br></br>suhapsahin@kocaeli.edu.tr</Card.Text>
                           </Card.Body>
                         </Card>
                   </CardGroup>
@@ -148,18 +159,21 @@ return (
                           <Card.Img variant="top" src={person1} style={{borderRadius:"0"}}/>
                           <Card.Body style= {{color:"white", textAlign:"center",margin:"0px",padding:"2%"}}>
                            <Card.Text className="font300" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>Doç. Dr. <br></br>Suhap ŞAHİN</Card.Text>
+                           <Card.Text className="image-overlay" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>+90 0530 540 1163<br></br>suhapsahin@kocaeli.edu.tr</Card.Text>
                           </Card.Body>
                         </Card>
                         <Card className="backgroundcardekip">
                           <Card.Img variant="top" src={person1} style={{borderRadius:"0"}}/>
                           <Card.Body style= {{color:"white", textAlign:"center",margin:"0px",padding:"2%"}}>
                             <Card.Text className="font300" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>Asst. Prof. <br></br>Fidan KAYA GÜLAĞIZ</Card.Text>
+                            <Card.Text className="image-overlay" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>+90 0530 540 1163<br></br>suhapsahin@kocaeli.edu.tr</Card.Text>
                           </Card.Body>
                         </Card>
                         <Card className="backgroundcardekip">
                           <Card.Img variant="top" src={person1} style={{borderRadius:"0"}}/>
                           <Card.Body style= {{color:"white", textAlign:"center",margin:"0px",padding:"2%"}}>
                             <Card.Text className="font300" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>Asst. Prof. <br></br>Mehmet Ali ALTUNCU</Card.Text>
+                            <Card.Text className="image-overlay" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>+90 0530 540 1163<br></br>suhapsahin@kocaeli.edu.tr</Card.Text>
                           </Card.Body>
                         </Card>
                   </CardGroup>
@@ -171,18 +185,21 @@ return (
                           <Card.Img variant="top" src={person1} style={{borderRadius:"0"}}/>
                           <Card.Body style= {{color:"white", textAlign:"center",margin:"0px",padding:"2%"}}>
                            <Card.Text className="font300" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>Doç. Dr. <br></br>Suhap ŞAHİN</Card.Text>
+                           <Card.Text className="image-overlay" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>+90 0530 540 1163<br></br>suhapsahin@kocaeli.edu.tr</Card.Text>
                           </Card.Body>
                         </Card>
                         <Card className="backgroundcardekip">
                           <Card.Img variant="top" src={person1} style={{borderRadius:"0"}}/>
                           <Card.Body style= {{color:"white", textAlign:"center",margin:"0px",padding:"2%"}}>
                             <Card.Text className="font300" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>Asst. Prof. <br></br>Fidan KAYA GÜLAĞIZ</Card.Text>
+                            <Card.Text className="image-overlay" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>+90 0530 540 1163<br></br>suhapsahin@kocaeli.edu.tr</Card.Text>
                           </Card.Body>
                         </Card>
                         <Card className="backgroundcardekip">
                           <Card.Img variant="top" src={person1} style={{borderRadius:"0"}}/>
                           <Card.Body style= {{color:"white", textAlign:"center",margin:"0px",padding:"2%"}}>
                             <Card.Text className="font300" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>Asst. Prof. <br></br>Mehmet Ali ALTUNCU</Card.Text>
+                            <Card.Text className="image-overlay" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>+90 0530 540 1163<br></br>suhapsahin@kocaeli.edu.tr</Card.Text>
                           </Card.Body>
                         </Card>
                   </CardGroup>
@@ -194,18 +211,21 @@ return (
                           <Card.Img variant="top" src={person1} style={{borderRadius:"0"}}/>
                           <Card.Body style= {{color:"white", textAlign:"center",margin:"0px",padding:"2%"}}>
                            <Card.Text className="font300" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>Doç. Dr. <br></br>Suhap ŞAHİN</Card.Text>
+                           <Card.Text className="image-overlay" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>+90 0530 540 1163<br></br>suhapsahin@kocaeli.edu.tr</Card.Text>
                           </Card.Body>
                         </Card>
                         <Card className="backgroundcardekip">
                           <Card.Img variant="top" src={person1} style={{borderRadius:"0"}}/>
                           <Card.Body style= {{color:"white", textAlign:"center",margin:"0px",padding:"2%"}}>
                             <Card.Text className="font300" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>Asst. Prof. <br></br>Fidan KAYA GÜLAĞIZ</Card.Text>
+                            <Card.Text className="image-overlay" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>+90 0530 540 1163<br></br>suhapsahin@kocaeli.edu.tr</Card.Text>
                           </Card.Body>
                         </Card>
                         <Card className="backgroundcardekip">
                           <Card.Img variant="top" src={person1} style={{borderRadius:"0"}}/>
                           <Card.Body style= {{color:"white", textAlign:"center",margin:"0px",padding:"2%"}}>
                             <Card.Text className="font300" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>Asst. Prof. <br></br>Mehmet Ali ALTUNCU</Card.Text>
+                            <Card.Text className="image-overlay" style={{textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>+90 0530 540 1163<br></br>suhapsahin@kocaeli.edu.tr</Card.Text>
                           </Card.Body>
                         </Card>
                   </CardGroup>

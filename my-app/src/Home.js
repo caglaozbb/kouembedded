@@ -2,8 +2,8 @@ import React from "react"
 import { Container, Nav, Navbar, Button} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import logo from './images/logo.png'
-import backg2 from './images/backg-2.png'
-import backg3 from './images/backg3.png'
+import backg1 from './images/backg1.png'
+import backg2 from './images/backg2.png'
 import iconogrenci from './images/iconogrenci.png'
 import iconproje from './images/iconproje.png'
 import iconyayin from './images/iconyayin.png'
@@ -51,7 +51,7 @@ return (
               </div>
   {/* LANDINGPAGE */}
               <div className="imageWrapper fontAll">
-                <img src={backg3} className="image" style={{height:"20%"}} alt="background" />
+                <img src={backg1} className="image" style={{height:"20%"}} alt="background" />
                 <h2 className="imageTexth1 fontlight" style={{fontSize:"2.8125vw"}}>KOCAELİ ÜNİVERSİTESİ</h2>
                 <h3 className="imageTexth2 font900" style={{fontSize:"2.1875vw"}}>GÖMÜLÜ SİSTEMLER LABORATUVARI</h3>
                 <p className="imageTextp font300" style={{fontSize:"1.25vw"}}> Gömülü ve Sensör Sistemleri Laboratuvarı, Kocaeli Üniversitesi Mühendislik Fakültesi çatısı <br></br> altında faaliyet gösteren bir araştırma ve geliştirme laboratuvarıdır. Lisans, yüksek lisans ve doktora öğrencilerimizin mühendislik alanlarında deneyim kazanmaları ve uzmanlaşmaları hedeflenmektedir.</p>
