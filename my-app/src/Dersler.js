@@ -7,6 +7,8 @@ import './App.css'
 import Card from 'react-bootstrap/Card'
 import CardGroup from 'react-bootstrap/CardGroup'
 import backg4 from './images/backg4.png'
+import ders from './images/ders.jpg'
+
 
 
 // TODO: fotografları importlamak icin index.js doyası olusturup icinde exportlaman ve daha sonra kullanacagın dosyalarda topluca importlayabilirsin
@@ -45,36 +47,85 @@ return (
                 <p className="font300" style={{fontSize:"1vw",color:"whitesmoke",marginLeft:"70%",marginTop:"12%",position:"absolute"}}> Anasayfa / Dersler</p>
                 </div>
 
+                <div style={{marginTop:"100px"}} className="fontAll">
+                <h3 className="font500" style={{fontSize:"3.125vw", display: "flex", justifyContent: "center"}}>DERSLER</h3>
+                <div style={{marginTop:"5%"}}>
+                    <CardGroup className="c mx-auto" style={{ display:"flex",width:"50%"}}>
+                        <Card>
+                          <Card.Img variant="top" src={ders} style={{borderRadius:"0"}}/>
+                          <Card.Body style= {{color:"white", textAlign:"center",margin:"0px",padding:"2%"}}>
+                           <Card.Text className="font300" style={{color:"#000000",textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>Gömülü Sistemler <br></br>Ders 1</Card.Text>
+                          </Card.Body>
+                        </Card>
+                        <Card>
+                          <Card.Img variant="top" src={ders}  style={{borderRadius:"0"}}/>
+                          <Card.Body style= {{color:"white", textAlign:"center",margin:"0px",padding:"2%"}}>
+                          <Card.Text className="font300" style={{color:"#000000",textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>Gömülü Sistemler <br></br>Ders 2</Card.Text>
+                          </Card.Body>
+                        </Card>
+                        <Card>
+                          <Card.Img variant="top" src={ders}  style={{borderRadius:"0"}}/>
+                          <Card.Body style= {{color:"white", textAlign:"center",margin:"0px",padding:"2%"}}>
+                          <Card.Text className="font300" style={{color:"#000000", textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>Gömülü Sistemler <br></br>Ders 3</Card.Text>
+                          </Card.Body>
+                        </Card>
+                  </CardGroup>
+                  </div> 
+                  <div style={{marginTop:"5%"}}>
+                    <CardGroup className="c mx-auto" style={{ display:"flex",width:"50%"}}>
+                        <Card>
+                          <Card.Img variant="top" src={ders} style={{borderRadius:"0"}}/>
+                          <Card.Body style= {{color:"white", textAlign:"center",margin:"0px",padding:"2%"}}>
+                           <Card.Text className="font300" style={{color:"#000000",textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>Gömülü Sistemler <br></br>Ders 1</Card.Text>
+                          </Card.Body>
+                        </Card>
+                        <Card>
+                          <Card.Img variant="top" src={ders}  style={{borderRadius:"0"}}/>
+                          <Card.Body style= {{color:"white", textAlign:"center",margin:"0px",padding:"2%"}}>
+                          <Card.Text className="font300" style={{color:"#000000",textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>Gömülü Sistemler <br></br>Ders 2</Card.Text>
+                          </Card.Body>
+                        </Card>
+                        <Card>
+                          <Card.Img variant="top" src={ders}  style={{borderRadius:"0"}}/>
+                          <Card.Body style= {{color:"white", textAlign:"center",margin:"0px",padding:"2%"}}>
+                          <Card.Text className="font300" style={{color:"#000000", textAlign:"center",fontSize:"1vw", fontStyle:"italic"}}>Gömülü Sistemler <br></br>Ders 3</Card.Text>
+                          </Card.Body>
+                        </Card>
+                  </CardGroup>
+                  </div> 
+                  </div>
+
 
   {/* CONTACT */}
-             <div>
+  <div className="contact" style={{marginTop:"5%", backgroundColor: "#e9eef4"}}>
              <CardGroup className="a" style={{justifyContent:"center", display:"flex",marginRight:"150px", marginLeft:"150px"}}>
                   <Card  style={{borderRadius:"0px", height:"150px",borderWidth:"0px",wordWrap:"break-word",marginBottom:"25px",marginTop:"10px"}} >
-                    <Card.Body className="fontlight" style= {{color:"#2c8e32", textAlign:"center",fontSize:"15px"}}>
+                    <Card.Body className="fontlight" style= {{color:"#2c8e32", textAlign:"center",fontSize:"15px",backgroundColor: "#e9eef4"}}>
                       <Card.Text  className="font500" style={{fontSize:"18px"}}>Adres</Card.Text>
                       <Card.Text  className="font300" style={{padding:"0px",margin:"0"}}>Kocaeli Üniversitesi<br></br>Mühendislik<br></br>B Fakültesi<br></br>İzmit / Kocaeli</Card.Text>
                     </Card.Body>
                   </Card>
                   <Card  style={{borderRadius:"0px", height:"150px",borderWidth:"0px",wordWrap:"break-word",marginBottom:"25px",marginTop:"10px"}}>
-                    <Card.Body className="fontlight" style= {{color:"#2c8e32", textAlign:"center",fontSize:"15px"}}>
+                  <Card.Body className="fontlight" style= {{color:"#2c8e32", textAlign:"center",fontSize:"15px",backgroundColor: "#e9eef4"}}>
                       <Card.Text  className="font500"  style={{fontSize:"18px"}}>Çalışma Saatleri</Card.Text>
                       <Card.Text  className="font300">08:00 - 17:30</Card.Text>
                       <Card.Text  className="font300">Pazartesi - Cuma</Card.Text>
                     </Card.Body>
                   </Card>
                   <Card style={{borderRadius:"0px", height:"150px",borderWidth:"0px",wordWrap:"break-word",marginBottom:"25px",marginTop:"10px"}}>
-                    <Card.Body className="fontlight" style= {{color:"#2c8e32", textAlign:"center",fontSize:"15px"}}>
+                  <Card.Body className="fontlight" style= {{color:"#2c8e32", textAlign:"center",fontSize:"15px",backgroundColor: "#e9eef4"}}>
                       <Card.Text  className="font500"  style={{fontSize:"18px",}}>E-Mail</Card.Text>
                       <Card.Text  className="font300" style={{padding:"0px", margin:"0px"}}>embedded@kocaeli.edu.tr</Card.Text>
                     </Card.Body>
                   </Card>
                 </CardGroup>
              </div>
+             
   {/* Copyrights */}
-            <div id="copyright" className="copyright">
+             <div id="copyright" className="copyright">
               <h1>2022 KOU Embedded System Laboratory - All Rights Reserved.</h1>
               <h1>Developed by ...</h1>
-            </div>
+             </div>
         </div>
   );
 

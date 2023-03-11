@@ -39,11 +39,11 @@ return (
 
   {/* Header (buradaki tüm child elementi için css olusturulmalı mı yoksa özel cssleri olması mı daha dogru olur?)*/}
               <div id="header" className="imageWrapper fontAll">
-                <img src={backg3} style={{width:"100%"}} alt="ekibimiz sayfasının arka plan resmi" />
+                <img src={backg3} style={{width:"100%"}} alt="ekibimiz sayfasının arka plan resmi"/>
                 <h2 className="font400" style={{fontSize:"2.1875vw",position:"absolute", marginLeft:"20%",marginTop:"8%",color:"whitesmoke"}}>EKİBİMİZ</h2>
                 <h3 className="font900" style={{fontSize:"0.75vw",position:"absolute", marginLeft:"20%",marginTop:"12%",color:"#2c8e32"}}>İŞİMİZİ ÇOK SEVİYORUZ</h3>
-                <p className="font300" style={{fontSize:"1vw",color:"whitesmoke",marginLeft:"70%",marginTop:"12%",position:"absolute"}}> Anasayfa / Ekibimiz</p>
-                </div>
+                <p className="font300" style={{fontSize:"1vw",color:"whitesmoke",marginLeft:"70%",marginTop:"12%",position:"absolute"}}>Anasayfa / Ekibimiz</p>
+              </div>
 
 {/* TODO:CSS DUZENLE KİSİLERİN RESİMLERİNİ VE BİLGİLERİNİ EKLE */}
 {/* ekibimiz */}
