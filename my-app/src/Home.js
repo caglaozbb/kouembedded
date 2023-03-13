@@ -34,10 +34,10 @@ export const Home = () => {
 
 return (   
 
-  // NAVBAR
+  // navbar
         <Container fluid className="my-container">
                 <Navbar sticky="top" expand="lg" style={{backgroundColor: "#e9eef4"}}>
-                    <Navbar.Brand href="home" ><img className="navbar-logo" src={logo} alt="Gömülü Sistemler Laboratuvarı Logosu"/></Navbar.Brand>
+                    <Navbar.Brand href="home" ><img className="navbar-logo" src={logo} alt="Embedded lab logo"/></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav"></Navbar.Toggle>
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto nav-styles">
@@ -52,41 +52,42 @@ return (
                     </Navbar.Collapse>
                 </Navbar>
                 
-  {/* LANDINGPAGE */}
-              <div className="imageWrapper fontAll">
-                <img src={backg1} className="image" style={{height:"20%"}} alt="background" />
-                <h2 className="imageTexth1 fontlight" style={{fontSize:"2.8125vw"}}>KOCAELİ ÜNİVERSİTESİ</h2>
-                <h3 className="imageTexth2 font900" style={{fontSize:"2.1875vw"}}>GÖMÜLÜ SİSTEMLER LABORATUVARI</h3>
-                <p className="imageTextp font300" style={{fontSize:"1.25vw"}}> Gömülü ve Sensör Sistemleri Laboratuvarı, Kocaeli Üniversitesi Mühendislik Fakültesi çatısı <br></br> altında faaliyet gösteren bir araştırma ve geliştirme laboratuvarıdır. Lisans, yüksek lisans ve doktora öğrencilerimizin mühendislik alanlarında deneyim kazanmaları ve uzmanlaşmaları hedeflenmektedir.</p>
-                <div style={{position:"absolute",marginTop:"40%",width:"100%"}}>
-{/*FIXME:<CardGroup style={{justifyContent:"center", display:"flex",width:"50%",marginLeft:"20%"}}></CardGroup> olarak düzenle */}
-                    <CardGroup style={{justifyContent:"center", display:"flex",marginRight:"15%",marginLeft:"15%"}}>
-                      <Card style={{backgroundColor:"#2c8e32",height:"auto",borderRightColor:"whitesmoke",borderRightWidth:"1px"}} >
-                        <Card.Img variant="top" src={iconogrenci} style={{width:"15%", alignSelf:"center" , marginTop:"10%"}}/>
-                        <Card.Body style= {{color:"white", textAlign:"center"}}>
-                          <Card.Text  style={{fontWeight:"lighter",fontSize:"1.375vw"}}>Yüksek Lisans ve Lisans <br></br>Öğrencileri</Card.Text>
-                          <Card.Text className="fontnormal" style={{fontSize:"2.1875vw"}}>20+</Card.Text>
+  {/* landingpage */}
+            {/* FIXME:GORSELLERIN BOYUTLARINI AYNI AYARLA! */}
+            <Container fluid className="my-container imageWrapper fontAll">
+              <img src={backg1} className="imageHome" alt="home background"/>
+                <h2 className="homeTexth2">KOCAELİ ÜNİVERSİTESİ</h2>
+                <h3 className="homeTexth3">GÖMÜLÜ SİSTEMLER LABORATUVARI</h3>
+                <p className="homeTextp"> Gömülü ve Sensör Sistemleri Laboratuvarı, Kocaeli Üniversitesi Mühendislik Fakültesi çatısı altında faaliyet gösteren bir araştırma ve geliştirme laboratuvarıdır. Lisans, yüksek lisans ve doktora öğrencilerimizin mühendislik alanlarında deneyim kazanmaları ve uzmanlaşmaları hedeflenmektedir.</p>
+  {/* stats */}
+                <Container fluid className="my-container stat-container">
+                    <CardGroup className="card-group-stats">
+                      <Card className="card-stats">
+                        <Card.Img variant="top" src={iconogrenci} className="card-img-top-stats"/>
+                        <Card.Body className="card-body">
+                          <Card.Text className="stats-card-text ">Yüksek Lisans ve Lisans <br></br>Öğrencileri</Card.Text>
+                          <Card.Text className="statsFontNormal">20+</Card.Text>
                         </Card.Body>
                       </Card>
-                      <Card  style={{backgroundColor:"#04a151",height:"auto",borderRightColor:"whitesmoke",borderRightWidth:"1px"}}>
-                        <Card.Img variant="top" src={iconyayin} style={{width:"15%", alignSelf:"center" , marginTop:"10%"}} />
-                        <Card.Body style= {{color:"white", textAlign:"center"}}>
-                          <Card.Text  style={{fontWeight:"lighter",fontSize:"1.375vw", marginTop:"5%"}}>Yayınlar</Card.Text>
+                      <Card className="card-stats">
+                        <Card.Img variant="top" src={iconyayin} className="card-img-top-stats"/>
+                        <Card.Body className="card-body">
+                          <Card.Text className="stats-card-text ">Yayınlar</Card.Text>
                           <br></br>
-                          <Card.Text className="fontnormal" style={{fontSize:"2.1875vw"}}>70+</Card.Text>
+                          <Card.Text className="statsFontNormal">70+</Card.Text>
                         </Card.Body>
                       </Card>
-                      <Card style={{backgroundColor:"#2c8e32",height:"auto"}}>
-                        <Card.Img variant="top" src={iconproje} style={{width:"10%", alignSelf:"center", marginTop:"10%"}} />
-                        <Card.Body style= {{color:"white", textAlign:"center"}}>
-                          <Card.Text  style={{fontWeight:"lighter",fontSize:"1.375vw"}}>Tamamlanmış Proje</Card.Text>
+                      <Card className="card-stats">
+                        <Card.Img variant="top" src={iconproje} className="card-img-top-stats"/>
+                        <Card.Body className="card-body">
+                          <Card.Text className="stats-card-text ">Tamamlanmış Proje</Card.Text>
                           <br></br>
-                          <Card.Text className="fontnormal" style={{fontSize:"2.1875vw"}}>10+</Card.Text>
+                          <Card.Text className="statsFontNormal">10+</Card.Text>
                         </Card.Body>
                       </Card>
                     </CardGroup>
-                  </div>
-             </div>
+                  </Container>
+             </Container>
 
   {/* YAPILANLAR */}
   {/* slide true animasyon */}
