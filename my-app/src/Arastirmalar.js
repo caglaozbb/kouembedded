@@ -12,30 +12,29 @@ import backg5 from './images/backg5.png'
 // TODO: fotografları importlamak icin index.js doyası olusturup icinde exportlaman ve daha sonra kullanacagın dosyalarda topluca importlayabilirsin
 export const Arastirmalar = () => {
 
-return (   
+  function handleEmailClick() {
+    window.location.href = "mailto:kouembedded@gmail.com";
+  }
 
+return (   
+// FIXME:arastirmalara tıklayınca navbarda bir farklılık oluyor? arka plan resminde farklılık var 
   // NAVBAR
-  //FIXME: navbar container tamamen sağa yasla
-        <div>
-              <div>
-                <Navbar sticky="top" expand="lg" style={{backgroundColor: "#e9eef4"}}>
-                    <Navbar.Brand href="home"><img src={logo} alt="Gömülü Sistemler Laboratuvarı Logosu" style={{width:"70%", marginLeft:"20px"}}/></Navbar.Brand>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav"></Navbar.Toggle>
-                    <Navbar.Collapse id="basic-navbar-nav">
-                      <Container>
-                        <Nav style={{fontSize:"14px", justifyContent:"end"}}>
-                          <Nav.Link href="home" style={{marginRight: 20}}>Ana Sayfa</Nav.Link>
-                          <Nav.Link href="dersler" style={{marginRight: 20}}>Dersler</Nav.Link>
-                          <Nav.Link href="arastirmalar" className="navbarunderline">Araştırmalar</Nav.Link>
-                          <Nav.Link href="ekibimiz" className="navbarunderline">Ekibimiz</Nav.Link>
-                          <Nav.Link href="isbirlikcilerimiz" style={{marginRight: 20}}>İşbirlikçilerimiz</Nav.Link>
-                          <Nav.Link href={embeddedbrosur1} without rel="noopener noreferrer" target="_blank" style={{marginRight: 20}}>Broşür</Nav.Link>
-                          <Button variant="primary" style={{borderRadius:30, backgroundColor:"#2c8e32",borderWidth:0}}>Bize Ulaşın</Button>
-                        </Nav>
-                      </Container>
-                    </Navbar.Collapse>
-                </Navbar>
-              </div>
+  <Container fluid className="my-container">
+  <Navbar sticky="top" expand="lg" style={{backgroundColor: "#e9eef4"}}>
+      <Navbar.Brand href="home" ><img className="navbar-logo" src={logo} alt="Gömülü Sistemler Laboratuvarı Logosu"/></Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav"></Navbar.Toggle>
+      <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ms-auto nav-styles">
+            <Nav.Link href="home">Ana Sayfa</Nav.Link>
+            <Nav.Link href="dersler">Dersler</Nav.Link>
+            <Nav.Link href="arastirmalar" className="navbarunderline">Araştırmalar</Nav.Link>
+            <Nav.Link href="ekibimiz" className="navbarunderline">Ekibimiz</Nav.Link>
+            <Nav.Link href="isbirlikcilerimiz">İşbirlikçilerimiz</Nav.Link>
+            <Nav.Link href={embeddedbrosur1} without rel="noopener noreferrer" target="_blank">Broşür</Nav.Link>
+            <Button className="custom-btn" onClick={handleEmailClick}>Bize Ulaşın</Button>
+          </Nav>
+      </Navbar.Collapse>
+  </Navbar>
 
               <div id="header" className="imageWrapper fontAll">
                 <img src={backg5} style={{width:"100%"}} alt="ekibimiz sayfasının arka plan resmi" />
@@ -75,7 +74,7 @@ return (
               <h1>2022 KOU Embedded System Laboratory - All Rights Reserved.</h1>
               <h1>Developed by ...</h1>
             </div>
-        </div>
+        </Container>
   );
 
 };
