@@ -1,15 +1,13 @@
 import React from "react"
-import { Container, Nav, Navbar, Button} from 'react-bootstrap'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import logo from './images/logo.png'
-import backg3 from './images/backg3.png'
-import person1 from './images/person1.png'
 import './App.css'
-import embeddedbrosur1 from './images/embeddedbrosur1.pdf'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import { Container, Nav, Navbar, Button } from 'react-bootstrap'
 import Card from 'react-bootstrap/Card'
 import CardGroup from 'react-bootstrap/CardGroup'
 
-// TODO: fotografları importlamak icin index.js doyası olusturup icinde exportlaman ve daha sonra kullanacagın dosyalarda topluca importlayabilirsin
+import { logo, backg3, person1 } from "./images"
+import { embeddedbrosur1 } from "./documents";
+
 export const Ekibimiz = () => {
 
   function handleEmailClick() {

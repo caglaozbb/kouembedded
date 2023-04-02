@@ -1,35 +1,16 @@
 import React from "react"
-
-import { Container, Nav, Navbar, Button} from 'react-bootstrap'
-import { Card, CardGroup, Carousel} from 'react-bootstrap'
-
-import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
-
-import logo from './images/logo.png'
-import backg1 from './images/backg1.png'
-import backg2 from './images/backg2.png'
-import iconogrenci from './images/iconogrenci.png'
-import iconproje from './images/iconproje.png'
-import iconyayin from './images/iconyayin.png'
-import iconeye from './images/iconeye.png'
-import proje1 from './images/proje1.png'
-import proje2 from './images/proje2.png'
-import proje3 from './images/proje3.png'
-import proje4 from './images/proje4.png'
-import proje5 from './images/proje5.png'
-import proje6 from './images/proje6.png'
-import iconai from './images/iconai.png'
-import iconpc from './images/iconpc.png'
-
-import embeddedbrosur1 from './images/embeddedbrosur1.pdf'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import { Button, Card, CardGroup, Carousel, Container, Nav, Navbar } from 'react-bootstrap';
 
 
-// TODO: fotografları importlamak icin index.js doyası olusturup icinde exportlaman ve daha sonra kullanacagın dosyalarda topluca importlayabilirsin
+import { logo, backg1, backg2, iconogrenci, iconproje, iconyayin, iconeye, proje1, proje2, proje3, proje4, proje5, proje6, iconai, iconpc } from './images'
+import { embeddedbrosur1 } from "./documents"
+
 export const Home = () => {
 
   function handleEmailClick() {
-    window.location.href = "mailto:kouembedded@gmail.com";
+    window.location.href = "mailto:kouembedded@gmail.com"
   }
 
 return (   

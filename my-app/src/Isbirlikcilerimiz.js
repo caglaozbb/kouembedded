@@ -2,7 +2,7 @@ import React from "react"
 import { Container, Nav, Navbar, Button} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import logo from './images/logo.png'
-import embeddedbrosur1 from './images/embeddedbrosur1.pdf'
+import embeddedbrosur1 from './documents/embeddedbrosur1.pdf'
 import './App.css'
 import Card from 'react-bootstrap/Card'
 import CardGroup from 'react-bootstrap/CardGroup'
