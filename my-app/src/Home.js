@@ -1,8 +1,8 @@
 import React from "react"
-import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Button, Card, CardGroup, Carousel, Container, Nav, Navbar } from 'react-bootstrap';
-
+import './App.css'
+import { Container, Nav, Navbar, Button} from 'react-bootstrap'
+import { Card, CardGroup, Carousel} from 'react-bootstrap'
 
 import { logo, backg1, backg2, iconogrenci, iconproje, iconyayin, iconeye, proje1, proje2, proje3, proje4, proje5, proje6, iconai, iconpc } from './images'
 import { embeddedbrosur1 } from "./documents"

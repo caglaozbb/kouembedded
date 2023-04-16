@@ -9,7 +9,6 @@ import { logo, backg3, person1 } from "./images"
 import { embeddedbrosur1 } from "./documents";
 
 export const Ekibimiz = () => {
-
   function handleEmailClick() {
     window.location.href = "mailto:kouembedded@gmail.com";
   }
