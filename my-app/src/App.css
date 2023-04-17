@@ -12,6 +12,9 @@ font-family: 'Roboto', sans-serif;
 }
 
 /* Navbar */
+.navbar{
+  background-color: #e9eef4;
+}
 
 .navbar-logo {
   width: 70%;
@@ -166,7 +169,6 @@ button:active {
 }
 
 .card-img-top-stats{
-  width: 15%;
   margin-top: 10%;
   align-self: center;
 }

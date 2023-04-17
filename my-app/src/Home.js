@@ -4,20 +4,27 @@ import './App.css'
 import { Container, Nav, Navbar, Button} from 'react-bootstrap'
 import { Card, CardGroup, Carousel} from 'react-bootstrap'
 
-import { logo, backg1, backg2, iconogrenci, iconproje, iconyayin, iconeye, proje1, proje2, proje3, proje4, proje5, proje6, iconai, iconpc } from './images'
+import { logo, backg1, backg2, iconeye, 
+  proje1, proje2, proje3, proje4, proje5, proje6, iconai, iconpc,
+  PeopleOutlinedIcon, CollectionsBookmarkOutlinedIcon, TipsAndUpdatesOutlinedIcon, theme } from './media'
+
 import { embeddedbrosur1 } from "./documents"
+import { ThemeProvider } from '@mui/material/styles';
+
+
 
 export const Home = () => {
 
   function handleEmailClick() {
     window.location.href = "mailto:kouembedded@gmail.com"
   }
+  
 
 return (   
 
   // navbar
         <Container fluid className="my-container">
-                <Navbar sticky="top" expand="lg" style={{backgroundColor: "#e9eef4"}}>
+                <Navbar sticky="top" expand="lg" className="navbar">
                     <Navbar.Brand href="home" ><img className="navbar-logo" src={logo} alt="Embedded lab logo"/></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav"></Navbar.Toggle>
                     <Navbar.Collapse id="basic-navbar-nav">
@@ -34,24 +41,27 @@ return (
                 </Navbar>
                 
   {/* landingpage */}
-            {/* FIXME:GORSELLERIN BOYUTLARINI AYNI AYARLA! */}
             <Container fluid className="my-container imageWrapper fontAll">
               <img src={backg1} className="imageHome" alt="home background"/>
-                <h2 className="homeTexth2">KOCAELİ ÜNİVERSİTESİ</h2>
-                <h3 className="homeTexth3">GÖMÜLÜ SİSTEMLER LABORATUVARI</h3>
+                <h1 className="homeTexth2">KOCAELİ ÜNİVERSİTESİ</h1>
+                <h2 className="homeTexth3">GÖMÜLÜ SİSTEMLER LABORATUVARI</h2>
                 <p className="homeTextp"> Gömülü ve Sensör Sistemleri Laboratuvarı, Kocaeli Üniversitesi Mühendislik Fakültesi çatısı altında faaliyet gösteren bir araştırma ve geliştirme laboratuvarıdır. Lisans, yüksek lisans ve doktora öğrencilerimizin mühendislik alanlarında deneyim kazanmaları ve uzmanlaşmaları hedeflenmektedir.</p>
   {/* stats */}
                 <Container fluid className="my-container stat-container">
                     <CardGroup className="card-group-stats">
                       <Card className="card-stats">
-                        <Card.Img variant="top" src={iconogrenci} className="card-img-top-stats"/>
+                        <ThemeProvider theme={theme}>
+                        <PeopleOutlinedIcon variant="top" className="card-img-top-stats" style={{ color: '#fff' }}/>
+                        </ThemeProvider>
                         <Card.Body className="card-body">
                           <Card.Text className="stats-card-text ">Yüksek Lisans ve Lisans <br></br>Öğrencileri</Card.Text>
                           <Card.Text className="statsFontNormal">20+</Card.Text>
                         </Card.Body>
                       </Card>
                       <Card className="card-stats">
-                        <Card.Img variant="top" src={iconyayin} className="card-img-top-stats"/>
+                      <ThemeProvider theme={theme}>
+                        <CollectionsBookmarkOutlinedIcon variant="top" className="card-img-top-stats" style={{ color: '#fff'}}/>
+                        </ThemeProvider>
                         <Card.Body className="card-body">
                           <Card.Text className="stats-card-text ">Yayınlar</Card.Text>
                           <br></br>
@@ -59,7 +69,9 @@ return (
                         </Card.Body>
                       </Card>
                       <Card className="card-stats">
-                        <Card.Img variant="top" src={iconproje} className="card-img-top-stats"/>
+                      <ThemeProvider theme={theme}>
+                      <TipsAndUpdatesOutlinedIcon variant="top" className="card-img-top-stats" style={{ color: '#fff' }}/>
+                      </ThemeProvider>
                         <Card.Body className="card-body">
                           <Card.Text className="stats-card-text ">Tamamlanmış Proje</Card.Text>
                           <br></br>
