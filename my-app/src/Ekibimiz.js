@@ -5,7 +5,7 @@ import { Container, Nav, Navbar, Button } from 'react-bootstrap'
 import Card from 'react-bootstrap/Card'
 import CardGroup from 'react-bootstrap/CardGroup'
 
-import { logo, backg3, person1 } from "./images"
+import { logo, backg3, person1 } from "./media"
 import { embeddedbrosur1 } from "./documents";
 
 export const Ekibimiz = () => {

@@ -5,7 +5,7 @@ import { Container, Nav, Navbar, Button } from 'react-bootstrap'
 import Card from 'react-bootstrap/Card'
 import CardGroup from 'react-bootstrap/CardGroup'
 
-import { logo, backg4, ders } from "./images"
+import { logo, backg4, ders } from "./media"
 import { embeddedbrosur1 } from "./documents";
 
 export const Dersler = () => {

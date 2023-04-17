@@ -26,6 +26,8 @@ You can also reach out to the laboratory with contact me section.
 ## Installing
 + Node.js
 + Visual Studio Code
++ npm install @mui/icons-material
++ npm install @mui/material @emotion/react @emotion/styled
 
 ## Built With
 

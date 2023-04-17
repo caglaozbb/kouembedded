@@ -6,7 +6,7 @@ import Card from 'react-bootstrap/Card'
 import CardGroup from 'react-bootstrap/CardGroup'
 
 import { embeddedbrosur1 } from "./documents"
-import {logo, backg5 } from "./images"
+import {logo, backg5 } from "./media"
 
 export const Arastirmalar = () => {
 
